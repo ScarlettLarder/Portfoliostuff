@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+// Layout is what shows on every page of the website, so a good place for a nav bar for example
 
 const inter = Inter({ subsets: ['latin'] })
 
