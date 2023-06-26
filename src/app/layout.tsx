@@ -1,3 +1,5 @@
+// Typescript that is used throughout the code, good for imports and navigation
+
 import Link from 'next/link';
 import './globals.css';
 
@@ -14,7 +16,7 @@ export default function RootLayout({
             <Link href="/">
               Home
             </Link>
-            <Link href="/notes">
+            <Link href="/projects">
               Notes
             </Link>
           </nav>

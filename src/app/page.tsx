@@ -1,8 +1,7 @@
+// The landing page for the website
+
 export default function HomePage() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Some content</p>
-    </div>
+    <h1> Heya! </h1>
   )
 }
