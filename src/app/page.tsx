@@ -5,7 +5,8 @@ import styles from ".page.module.css"
 export default function Home() {
   return (
     <main>
-     <h1> Hello! </h1>
+     <mheader className="text-9xl py-3 m-10"> Welcome! </mheader>
+     <p className="text-xl m-10">You have found my portfolio</p>
     </main>
   )
 }

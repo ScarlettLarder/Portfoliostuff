@@ -17,7 +17,7 @@ export default function RootLayout({
           <nav>
             <ul>
               <li>
-               <Link href=""> d dddddddddddddddddddddddddd</Link>
+               <Link href="/">Scarletts Portfolio</Link>
               </li>
               <li>
                 <Link href="project">project</Link>
