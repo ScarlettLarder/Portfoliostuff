@@ -1,5 +1,3 @@
-// Typescript that is used throughout the code, good for imports and navigation
-
 import './globals.css'
 import { Inter } from 'next/font/google'
 

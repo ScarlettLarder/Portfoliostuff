@@ -1,5 +1,3 @@
-// The landing page for the website
-
 import Image from 'next/image'
 
 export default function Home() {

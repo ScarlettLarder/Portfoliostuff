@@ -1,12 +1,6 @@
-/* This CSS covers to all pages of the code */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* {
-  box-sizing: border-box;
-}
 
 :root {
   --foreground-rgb: 0, 0, 0;
