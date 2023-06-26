@@ -1,7 +1,15 @@
 import './globals.css'
 import Link from 'next/link'
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+  params: {
+    tag: string
+    item: string
+  }
+}) {
   return (
     <html lang='en'>
       <head>
