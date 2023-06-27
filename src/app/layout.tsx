@@ -22,7 +22,7 @@ export default function RootLayout({
          </nav>
           {children}
           <nav className="text-2xl flex border border-b-2 bottom-0 bg-purple-200">
-            <button className="bg-yellow-100 hover:bg-gray-100 mt-2 mb-5 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex ml-10 font-medium text-gray-600">
+            <button className="bg-yellow-100 hover:bg-gray-100 mt-2 mb-5 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex ml-10 text-gray-600">
               <a href="/project">Go see my projects </a>
             </button>
             <a href="/" className="py-1 my-1 ml-6 mt-3 font-normal float-right text-gray-500 ">Back to the top!</a>

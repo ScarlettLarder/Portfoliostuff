@@ -36,7 +36,7 @@ export default function Home() {
      </div>
      <div>
         <Image className='flex mt-3 float-right' src="eduliny2.svg" alt="dash2" width={450} height={500}/>
-        <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold mt-4 whitespace-normal"> Lorem ipsum dolor sit amet, consectetur</p>
+        <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold whitespace-normal"> Lorem ipsum dolor sit amet, consectetur</p>
         <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> eiusmod tempor incididunt ut labore et</p>
         <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-normal whitespace-normal"> laboris nisi ut aliquip ex ea commodo consequat. </p>
         <p className="text-4xl mx-16 pb-px mb-20 text-gray-600 font-normal whitespace-normal"> Duis aute irure dolor in reprehenderit </p>
@@ -46,7 +46,7 @@ export default function Home() {
      <div>
           <h1 className="text-8xl mx-16 pb-px mt-40 text-gray-700 lmao font-bold bg-local"> Hobbies </h1>
           <Image className='flex mt-3 float-right' src="Hobbyliny.svg" alt="dash2" width={600} height={300}/>
-          <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold mt-4 whitespace-normal"> Lorem ipsum dolor sit amet, consectetur fafwhgfdbv</p>
+          <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold whitespace-normal"> Lorem ipsum dolor sit amet, consectetur fafwhgfdbv</p>
           <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> eiusmod tempor incididunt ut laborefdsfsd et</p>
           <p className="text-4xl mx-16 pb-px mt-3 text-gray-600 font-normal whitespace-normal"> laboris nisi ut aliquip ex ea gfdsfsdfdscommodo consequat. </p>
           <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> Duis aute irure doloehenderit </p>
