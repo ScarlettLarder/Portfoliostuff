@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: graphie, coquette
+  }
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 0, 0, 0;
@@ -12,7 +17,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
@@ -23,21 +27,19 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
 }
 
 h1 {
-   color: white;
+   color: black;
    font-family: "graphie", sans-serif;
    font-weight: 400;
    font-style: normal;
 }
 
 mheader {
-  color: white;
+  color: #464646;
   font-family: coquette, sans-serif;
-  font-weight: 700;
+  font-weight: 550;
   font-style: normal;
 }
