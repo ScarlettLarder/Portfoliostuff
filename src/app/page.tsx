@@ -44,7 +44,21 @@ export default function Home() {
         <Image className='m-6' src="/dow.png" alt="dash2" width={45} height={50}/>
      </div>
      <div>
-      
+          <h1 className="text-8xl mx-16 pb-px mt-40 text-gray-700 lmao font-bold bg-local"> Hobbies </h1>
+          <Image className='flex mt-3 float-right' src="Hobbyliny.svg" alt="dash2" width={600} height={300}/>
+          <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold mt-4 whitespace-normal"> Lorem ipsum dolor sit amet, consectetur fafwhgfdbv</p>
+          <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> eiusmod tempor incididunt ut laborefdsfsd et</p>
+          <p className="text-4xl mx-16 pb-px mt-3 text-gray-600 font-normal whitespace-normal"> laboris nisi ut aliquip ex ea gfdsfsdfdscommodo consequat. </p>
+          <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> Duis aute irure doloehenderit </p>
+          <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal mt-3"> laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p className="text-4xl mx-16 pb-px mb-20 text-gray-600 font-normal whitespace-normal"> Duis aute irure dolor in reprehefdsnderit </p>
+     </div>
+     <div>
+          <h1 className="text-8xl mx-16 pb-px mt-40 text-gray-700 lmao font-bold bg-local"> Contact Me </h1>
+          <Image className='flex mx-16 pb-px' src="backtcont.svg" alt="dash2" width={520} height={500}/>
+     </div>
+     <div>
+          <Image className='flex' src="contliny.svg" alt="dash2" width={520} height={500}/>
      </div>
     </main>
   )
