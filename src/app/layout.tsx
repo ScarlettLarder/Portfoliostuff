@@ -21,7 +21,7 @@ export default function RootLayout({
           <a href="./project" className="py-1 m-2 my-1 font-normal float-right text-gray-500 ">See all projects</a>
          </nav>
           {children}
-          <nav className="text-2xl flex border border-b-2 bg-purple-200">
+          <nav className="text-2xl flex border border-b-2 bottom-0 bg-purple-200">
             <button className="bg-yellow-100 hover:bg-gray-100 mt-2 mb-5 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex ml-10 font-medium text-gray-600">
               <a href="/project">Go see my projects </a>
             </button>
