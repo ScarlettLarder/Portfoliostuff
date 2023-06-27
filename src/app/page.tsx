@@ -4,10 +4,11 @@ import styles from ".page.module.css"
 export default function Home() {
   return (
     <main>
-     <div class="">
-      <mheader className=" text-9xl py-2 m-4"> Welcome! </mheader>
-      <p className="text-xl m-10 font-semibold">You have found my portfolio</p>
+     <div className="mt-20 mb-20 ml-5">
+      <h1 className="text-9xl pb-px text-gray-700 lmao"> Welcome! </h1>
+      <p className="text-6xl font-semibold text-gray-700">You have found my portfolio</p>
      </div>
+     <p>ffafwaf</p>
     </main>
   )
 }

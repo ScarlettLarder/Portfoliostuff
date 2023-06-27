@@ -1,5 +1,6 @@
 import './globals.css';
-import { Navbar } from '';
+import Image from 'next/image'
+
 
 export default function RootLayout({
   children,
@@ -14,7 +15,10 @@ export default function RootLayout({
     <html lang='en'>
       <head>
         <body>
-           <Navbar />
+         <nav className="text-2xl flex border border-b-2 border-gray-800 gap-0 font-semibold">
+          <Image className='py-1 m-2 my-1' src="dashlines.svg" alt="dash" width={30} height={30}/>
+          <h1 className="flex py-1 m-2 my-1 font-medium">Scarletts portfolio</h1>
+         </nav>
           {children}
         </body>
       </head>
