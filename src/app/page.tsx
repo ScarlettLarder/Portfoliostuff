@@ -16,10 +16,10 @@ export default function Home() {
       <div className='bg-[url("/backpink.svg")] bg-no-repeat bg-right bg-contain'>
          <h1 className="text-8xl mx-16 pb-px mt-32 text-gray-700 lmao font-bold"> Personal </h1>
          <h1 className="text-8xl mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
-         <p className="text-4xl mx-16 pb-px text-gray-600 font-bold mt-4 whitespace-normal"> Lorem ipsum dolor sit amet, consectetur</p>
-         <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> eiusmod tempor incididunt ut labore et</p>
-         <p className="text-4xl mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal"> laboris nisi ut aliquip ex ea commodo consequat. </p>
-         <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> Duis aute irure dolor in reprehenderit </p>
+         <p className="text-4xl mx-16 pb-px text-gray-600 font-bold mt-4 whitespace-normal"> Hello! I am Scarlett and welcome to my portfolio.</p>
+         <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> Currently in college, learning web and design</p>
+         <p className="text-4xl mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal"> In this website, you will find a collection of projects, my eductaion and who I am. </p>
+         <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> </p>
          <Image className='m-6 flex' src="/dow.png" alt="dash2" width={45} height={50}/>
          <Image className='m-6' src="/dow.png" alt="dash2" width={45} height={50}/>
          <Image className='ml-6' src="/dow.png" alt="dash2" width={45} height={50}/>
@@ -31,21 +31,18 @@ export default function Home() {
       </div>
       <div>
             <Image className='flex mt-3 float-right' src="eduliny2.svg" alt="dash2" width={450} height={500}/>
-            <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold whitespace-normal"> Lorem ipsum dolor sit amet, consectetur</p>
-            <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> eiusmod tempor incididunt ut labore et</p>
-            <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-normal whitespace-normal"> laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <p className="text-4xl mx-16 pb-px mb-20 text-gray-600 font-normal whitespace-normal"> Duis aute irure dolor in reprehenderit </p>
+            <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold whitespace-normal"> I am studying T-Level Digital Design, Production and development</p>
+            <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> at Strode college.</p>
+            <p className="text-3xl mx-16 pb-px mt-5 text-gray-600 font-normal whitespace-normal"> The course covers a wide area of digital, the first year being</p>
+            <p className="text-3xl mx-16 pb-px mb-20 text-gray-600 font-normal whitespace-normal"> a general look, and learning python, and the second being web and design.</p>
             <Image className='flex mt-3' src="eduliny.svg" alt="dash2" width={900} height={500}/>
             <Image className='m-6' src="/dow.png" alt="dash2" width={45} height={50}/>
       </div>
       <div className="bg-[url('/Hobbyliny.svg')] bg-no-repeat bg-right bg-contain ">
             <h1 className="text-8xl mx-16 pb-px mt-40 text-gray-700 lmao font-bold bg-local"> Hobbies </h1>
-            <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold whitespace-normal"> Lorem ipsum dolor sit amet, consectetur fafwhgfdbv</p>
-            <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> eiusmod tempor incididunt ut laborefdsfsd et</p>
-            <p className="text-4xl mx-16 pb-px mt-3 text-gray-600 font-normal whitespace-normal"> laboris nisi ut aliquip ex ea gfdsfsdfdscommodo consequat. </p>
-            <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> Duis aute irure doloehenderit </p>
-            <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal mt-3"> laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <p className="text-4xl mx-16 pb-px mb-20 text-gray-600 font-normal whitespace-normal"> Duis aute irure dolor in reprehefdsnderit </p>
+            <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold whitespace-normal"> I enjoy a variety of things,</p>
+            <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> like video making, with my youtube channel that I try to upload on often</p>
+            <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> gaming, reading and drawing (not very good at drawing thought)</p>
             <Image className='m-8 flex' src="/dow.png" alt="dash2" width={45} height={50}/>
             <Image className='m-8' src="/dow.png" alt="dash2" width={45} height={50}/>
             <Image className='ml-8 mt' src="/dow.png" alt="dash2" width={45} height={50}/>

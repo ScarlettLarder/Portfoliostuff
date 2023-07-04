@@ -22,7 +22,7 @@ export default function RootLayout({
                     {children}
               <nav className="text-2xl flex bottom-0 border border-t-2 border-l-0 t-0 border-r-0 border-gray-200 bg-purple-200">
                     <button className="bg-yellow-100 hover:bg-gray-100 mt-2 mb-2 font-semibold py-1.5 px-4 border border-gray-400 rounded shadow flex ml-10 text-gray-600">
-                        <a href="/project">Go see my projects </a>
+                        <a href="/project">Go see my project&apos;s</a>
                     </button>
                     <a href="#" className="py-1 my-1 ml-6 mt-3 font-normal text-gray-500 top text-xl">Back to the top!</a>
               </nav>
