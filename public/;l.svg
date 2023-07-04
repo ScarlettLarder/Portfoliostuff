@@ -1,0 +1,36 @@
+<svg width="638" height="921" viewBox="0 0 638 921" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_1_93" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1005" height="1273">
+<rect width="1146.27" height="572.739" transform="matrix(-0.418335 0.908293 -0.91449 -0.404608 1004 231.855)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_1_93)">
+<rect width="2964.36" height="1327.4" transform="matrix(0.914428 0.404744 -0.418642 0.908157 -959.438 -634.076)" fill="white"/>
+<rect width="2964.36" height="1327.4" transform="matrix(0.914428 0.404744 -0.418642 0.908157 -959.438 -634.076)" fill="url(#pattern0)"/>
+<line y1="-2" x2="572.735" y2="-2" transform="matrix(-0.914661 -0.404236 0.418316 -0.908301 921.89 402.258)" stroke="#444545" stroke-width="4"/>
+<line y1="-0.5" x2="568.126" y2="-0.5" transform="matrix(-0.914661 -0.404236 0.418316 -0.908301 921.89 402.258)" stroke="black"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417861 0.908502 -0.91988 -0.392702 960.978 212.819)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1199.44" y2="-2" transform="matrix(-0.417711 0.908569 -0.92014 -0.392117 941.834 149.439)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417861 0.908502 -0.91988 -0.392702 880.958 177.416)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417861 0.908502 -0.91988 -0.392702 840.948 159.714)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1149.22" y2="-2" transform="matrix(-0.417782 0.908537 -0.919903 -0.392649 800.883 141.987)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417849 0.908507 -0.919757 -0.392978 560.879 35.8005)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417842 0.908511 -0.919679 -0.393154 520.869 18.0981)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1146.26" y2="-2" transform="matrix(-0.418335 0.908293 -0.91449 -0.404608 480.236 0.120361)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417861 0.908502 -0.91988 -0.392702 1000.98 230.52)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417849 0.908507 -0.919757 -0.392978 600.889 53.502)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417861 0.908502 -0.91988 -0.392702 680.909 88.9055)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417801 0.908529 -0.919283 -0.39404 634.719 84.6223)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417861 0.908502 -0.91988 -0.392702 760.928 124.311)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="1134.45" y2="-2" transform="matrix(-0.417857 0.908504 -0.91984 -0.392792 720.918 106.608)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="568.126" y2="-2" transform="matrix(-0.91449 -0.404608 0.418335 -0.908293 605.504 1089.2)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="572.735" y2="-2" transform="matrix(-0.914624 -0.404318 0.418311 -0.908303 1000.99 230.522)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="568.134" y2="-2" transform="matrix(-0.916653 -0.39988 0.418098 -0.908397 842.794 573.992)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="568.126" y2="-2" transform="matrix(-0.914661 -0.404236 0.418316 -0.908301 763.697 745.728)" stroke="#444545" stroke-width="4"/>
+<line y1="-2" x2="568.785" y2="-2" transform="matrix(-0.91449 -0.404608 0.418335 -0.908293 684.601 917.464)" stroke="#444545" stroke-width="4"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.0323848" height="0.0723216">
+<use xlink:href="#image0_1_93" transform="scale(0.000337341 0.00075335)"/>
+</pattern>
+<image id="image0_1_93" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAABYlAAAWJQFJUiTwAAABLElEQVR4Ae3d0QmDMBRA0Vi6kPsP4Uh2g5ZA5UY5Z4LI5f08QtzGxY7jPMdC9n3bxkJeg5QAMQFiAsQEiAkQEyAmQEyAmAAxAWLTe5Grdzuzu5rVzjPLBMQEiAkQEyAmQEyAmAAxAWICxASICRDb7r5LmbXa95qAmAAxAWICxASICRATICZATICYADEBYu8x6erdzuyuZvY8q907MgExAWICxASICRATICZATICYADEBYgLE3Av6M/eCbkaAmAAxAWICxASICRATICZATICYADHvBf3gvaCHEyAmQEyAmAAxAWICxASICRATICZA7PI7O/4j9p0JiAkQEyAmQEyAmAAxAWICxASICRATILbUXuQJZndfJiAmQEyAmAAxAWICxASICRATICZATIDYB8N+NLxhvvEYAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
