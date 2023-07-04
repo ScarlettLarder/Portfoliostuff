@@ -13,17 +13,32 @@ export default function Home() {
          <Image className='m-6' src="/dow.png" alt="dash2" width={50} height={50}/>
          <Image className='m-6' src="/dow.png" alt="dash2" width={50} height={50}/>
       </div>
-      <div className='bg-[url("/backpink.svg")] bg-no-repeat bg-right bg-contain'>
-         <h1 className="text-8xl mx-16 pb-px mt-32 text-gray-700 lmao font-bold"> Personal </h1>
+      <div className='bg-[url("/backpink.svg")] bg-no-repeat bg-right bg-contain overflow-visible '>
+         <h1 className="text-8xl mx-16 pb-px mt-32 text-gray-700 lmao font-bold "> Personal </h1>
          <h1 className="text-8xl mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
          <p className="text-4xl mx-16 pb-px text-gray-600 font-bold mt-4 whitespace-normal"> Hello! I am Scarlett and welcome to my portfolio.</p>
          <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> Currently in college, learning web and design</p>
-         <p className="text-4xl mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal"> In this website, you will find a collection of projects, my eductaion and who I am. </p>
-         <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> </p>
-         <Image className='m-6 flex' src="/dow.png" alt="dash2" width={45} height={50}/>
-         <Image className='m-6' src="/dow.png" alt="dash2" width={45} height={50}/>
-         <Image className='ml-6' src="/dow.png" alt="dash2" width={45} height={50}/>
-         <Image className='flex float-right' src="doordash.svg" alt="dash2" width={1000} height={500}/>
+         <p className="text-4xl mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal absolute"> In this website, you will find a collection of projects,
+         <p className="text-4xl text-gray-600 font-normal whitespace-normal"> my eductaion and who I am.
+         </p></p>
+         <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal static isolate float-right"> </p>
+
+         <div className="float-right">
+            <div className="bg-[url('/pop_up_two.svg')] float-none bg-no-repeat bg-center mr-96 text-center bg-contain bg-local min-w-min max-w-full">
+             <p>&nbsp;</p>
+             <p>&nbsp;</p>
+             <p>Hello!</p>
+             <p>This is a placeholder</p>
+             <p className="">I know very cooldwadwdgfdgfdgfdgffdgdfgfdgfdgfdgdfgdfwawda</p>
+             <p>This is a placeholder</p>
+             <p>&nbsp;</p>
+            </div>
+         </div>
+
+         <Image className='m-10 static flex mt-24' src="/dow.png" alt="dash2" width={45} height={50}/>
+         <Image className='m-10' src="/dow.png" alt="dash2" width={45} height={50}/>
+         <Image className='ml-10' src="/dow.png" alt="dash2" width={45} height={50}/>
+         <Image className='flex float-right ' src="doordash.svg" alt="dash2" width={1000} height={500}/>
       </div>
       <div>
             <h1 className="text-8xl mx-16 pb-px mt-40 text-gray-700 lmao font-bold bg-local"> Education </h1>
