@@ -14,9 +14,8 @@ export default function Home() {
          <Image className='m-6' src="/dow.png" alt="dash2" width={50} height={50}/>
       </div>
       <div>
-         <Image className='block mt-24 ml-10 float-right' src="backpink.svg" alt="dash2" width={340} height={350}/>
       </div>
-      <div>
+      <div className='bg-[url("/backpink.svg")] '>
          <h1 className="text-8xl mx-16 pb-px mt-32 text-gray-700 lmao font-bold"> Personal </h1>
          <h1 className="text-8xl mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
          <p className="text-4xl mx-16 pb-px text-gray-600 font-bold mt-4 whitespace-normal"> Lorem ipsum dolor sit amet, consectetur</p>
