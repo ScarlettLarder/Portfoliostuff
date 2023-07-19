@@ -44,18 +44,20 @@ export default function About() {
             </div>
                 {CurrentProjects.map((Products) => (
                     <a key={Products.project} href={Products.href}>
-                        <div className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
-                            <Image className="m-4 float-right"
-                                src={Products.imageSrc}
-                                alt={Products.imageAlt}
-                                width={600} 
-                                height={400}/>
-                        </div>   
-                        <div className="pl-5 px-3 ml-2 sm:ml-6 mb-">
-                            <h2 className="text-3xl mt-10 font-normal">{Products.project}</h2>
-                            <h1 className="lmao text-7xl font-bold text-gray-700 ">{Products.name}</h1>
-                            <p className="text-3xl mt-5 font-medium"><span>What I did: </span>{Products.work}</p>
-                            <p className="text-3xl mt-3 font-normal">{Products.desc}</p>
+                        <div className="mt-10 mb-10 sm:m-20 bg-gray-100 border-8 border-purple-300 overflow-visible clearfix">
+                            <div className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
+                                <Image className="m-4 float-right"
+                                    src={Products.imageSrc}
+                                    alt={Products.imageAlt}
+                                    width={600} 
+                                    height={400}/>
+                            </div>   
+                            <div className="pl-5 px-3 ml-2 sm:ml-6 mb-">
+                                <h2 className="text-3xl mt-10 font-normal">{Products.project}</h2>
+                                <h1 className="lmao text-7xl font-bold text-gray-700 ">{Products.name}</h1>
+                                <p className="text-3xl mt-5 font-medium"><span>What I did: </span>{Products.work}</p>
+                                <p className="text-3xl mt-3 mb-10 font-normal">{Products.desc}</p>
+                            </div>
                         </div>
                     </a>
                 ))}
