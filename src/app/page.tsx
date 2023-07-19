@@ -1,5 +1,4 @@
 import Image from "next/image" 
-import styles from ".page.module.css"
 
 export default function Home() {
   return (
@@ -15,32 +14,36 @@ export default function Home() {
          <Image className='m-6' src="/dow.png" alt="dash2" width={50} height={50}/>
          <Image className='m-6' src="/dow.png" alt="dash2" width={50} height={50}/>
       </div>
-      <div className='bg-[url("/backpink.svg")] bg-no-repeat bg-right bg-contain overflow-visible '>
-         <h1 className="text-8xl mx-16 pb-px mt-32 text-gray-700 lmao font-bold "> Personal </h1>
-         <h1 className="text-8xl mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
-         <p className="text-4xl mx-16 pb-px text-gray-600 font-bold mt-4 whitespace-normal"> Hello! I am Scarlett and welcome to my portfolio.</p>
-         <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> Currently in college, learning web and design</p>
-         <p className="text-4xl mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal absolute"> In this website, you will find a collection of projects,
-         <p className="text-4xl text-gray-600 font-normal whitespace-normal"> my eductaion and who I am.
-         </p></p>
-         <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal static isolate float-right"> </p>
+      <div className="mt-32 pt-10 clearfix bg-green-50 border-t-4 border-b-4 border-gray-500">
+        <div className='bg-[url("/backpink.svg")]  bg-no-repeat bg-right bg-contain overflow-visible'>
+          <h1 className="text-8xl mx-16 pb-px text-gray-700 lmao font-bold "> Personal </h1>
+          <h1 className="text-8xl mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
+          <p className="text-4xl mx-16 pb-px text-gray-600 font-bold mt-4 whitespace-normal"> Hello! I am Scarlett and welcome to my portfolio.</p>
+          <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> Currently in college, learning web and design</p>
+          <p className="text-4xl mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal absolute"> In this website, you will find a collection of projects,
+          <p className="text-4xl text-gray-600 font-normal whitespace-normal"> my eductaion and who I am.
+          </p></p>
+          <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal static isolate float-right"> </p>
 
-         <div className="float-right">
-            <div className="bg-[url('/pop_up_two.svg')] float-none bg-no-repeat bg-center mr-96 text-center bg-contain bg-local min-w-min max-w-full">
-             <p>&nbsp;</p>
-             <p>&nbsp;</p>
-             <p>Hello!</p>
-             <p>This is a placeholder</p>
-             <p className="">I know very cooldwadwdgfdgfdgfdgffdgdfgfdgfdgfdgdfgdfwawda</p>
-             <p>This is a placeholder</p>
-             <p>&nbsp;</p>
-            </div>
-         </div>
+          <div className="float-right">
+              <div className="bg-[url('/pop_up_two.svg')] float-none bg-no-repeat bg-center mr-96 text-center bg-contain bg-local min-w-min max-w-full">
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>Hello!</p>
+              <p>This is a placeholder</p>
+              <p className="">I know very cooldwadwdgfdgfdgfdgffdgdfgfdgfdgfdgdfgdfwawda</p>
+              <p>This is a placeholder</p>
+              <p>&nbsp;</p>
+              </div>
+          </div>
+          
 
-         <Image className='m-10 static flex mt-24' src="/dow.png" alt="dash2" width={45} height={50}/>
-         <Image className='m-10' src="/dow.png" alt="dash2" width={45} height={50}/>
-         <Image className='ml-10' src="/dow.png" alt="dash2" width={45} height={50}/>
-         <Image className='flex float-right ' src="doordash.svg" alt="dash2" width={1000} height={500}/>
+          <Image className='m-10 static flex mt-24' src="/dow.png" alt="dash2" width={45} height={50}/>
+          <Image className='m-10' src="/dow.png" alt="dash2" width={45} height={50}/>
+          <Image className='ml-10' src="/dow.png" alt="dash2" width={45} height={50}/>
+          <Image className='flex float-right ' src="doordash.svg" alt="dash2" width={1000} height={500}/>
+        </div>
+
       </div>
       <div>
             <h1 className="text-8xl mx-16 pb-px mt-40 text-gray-700 lmao font-bold bg-local"> Education </h1>
@@ -55,16 +58,18 @@ export default function Home() {
             <Image className='flex mt-3' src="eduliny.svg" alt="dash2" width={900} height={500}/>
             <Image className='m-6' src="/dow.png" alt="dash2" width={45} height={50}/>
       </div>
-      <div className="bg-[url('/Hobbyliny.svg')] bg-no-repeat bg-right bg-contain ">
-            <h1 className="text-8xl mx-16 pb-px mt-40 text-gray-700 lmao font-bold bg-local"> Hobbies </h1>
-            <Image className='flex mx-16 pb-px' src="hobby_line.svg" alt="dash2" width={420} height={500}/>
-            <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold whitespace-normal"> I enjoy a variety of things,</p>
-            <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> like video making, with my youtube channel that I try to upload on often, i also enjoy</p>
-            <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> gaming, reading and drawing (not very good at drawing thought).</p>
-            <Image className="float-right mr-60 mt-5" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
-            <Image className='m-10 flex' src="/dow.png" alt="dash2" width={45} height={50}/>
-            <Image className='m-10' src="/dow.png" alt="dash2" width={45} height={50}/>
-            <Image className='ml-10' src="/dow.png" alt="dash2" width={45} height={50}/>
+      <div className="mt-32 pt-10 clearfix bg-gray-100 border-t-4 border-b-4 border-gray-500">
+        <div className="bg-[url('/Hobbyliny.svg')] bg-no-repeat bg-right bg-contain ">
+              <h1 className="text-8xl mx-16 pb-px text-gray-700 lmao font-bold bg-local"> Hobbies </h1>
+              <Image className='flex mx-16 pb-px' src="hobby_line.svg" alt="dash2" width={420} height={500}/>
+              <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold whitespace-normal"> I enjoy a variety of things,</p>
+              <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> like video making, with my youtube channel that I try to upload on often, i also enjoy</p>
+              <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> gaming, reading and drawing (not very good at drawing thought).</p>
+              <Image className="float-right mr-60 mt-5 mb-10" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
+              <Image className='m-10 flex' src="/dow.png" alt="dash2" width={45} height={50}/>
+              <Image className='m-10' src="/dow.png" alt="dash2" width={45} height={50}/>
+              <Image className='ml-10' src="/dow.png" alt="dash2" width={45} height={50}/>
+        </div>
       </div>
       <div className="bg-[url('/contliny.svg')] bg-no-repeat bg-left bg-contain">
             <h1 className="text-8xl mx-16 pb-px mt-40 text-gray-700 lmao font-bold bg-local"> Contact Me </h1>
