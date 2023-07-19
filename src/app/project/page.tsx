@@ -60,7 +60,7 @@ export default function About() {
                         </div>
                     </a>
                     </div>
-                    ))}
+            ))}
         </div>
     )
 }
