@@ -44,11 +44,11 @@ export default function About() {
     });
     return (
         <div> 
-            <div className=" sm:float-right clearfix mb-10 mt-20 " style={{height: "45vh",width: "50vw",}}>
+            <div className=" sm:float-right clearfix mb-10 mt-20 w-screen sm:w-2/5 h-3/6 sm:h-96" >
                 <RiveComponent />
             </div>
             <div className="pb-px ml-10 text-gray-700 font-bold mt-30">
-                <h1 className="pt-32 text-5xl sm:text-8xl lmao font-bold "> Projects page / </h1>
+                <h1 className="pt-10 sm:pt-32 text-5xl sm:text-8xl lmao font-bold "> Projects page / </h1>
                 <h1 className="text-4xl sm:text-5xl mt-2 sm:mt-0 font-bold"> My past projects on web and more.</h1>
                 <p className="text-3xl pb-32 mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project to get sent to it.</p>
             </div>
