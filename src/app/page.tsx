@@ -20,7 +20,7 @@ export default function Home() {
           <h1 className="text-8xl mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
           <p className="text-4xl mx-16 pb-px text-gray-600 font-bold mt-4 whitespace-normal"> Hello! I am Scarlett and welcome to my portfolio.</p>
           <p className="text-4xl mx-16 pb-px text-gray-600 font-bold whitespace-normal"> Currently in college, learning web and design</p>
-          <p className="text-4xl mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal absolute"> In this website, you will find a collection of projects,
+          <p className="text-4xl mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal "> In this website, you will find a collection of projects,
           <p className="text-4xl text-gray-600 font-normal whitespace-normal"> my eductaion and who I am.
           </p></p>
           <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal static isolate float-right"> </p>

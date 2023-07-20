@@ -1,5 +1,6 @@
-
+"use client"
 import Image from "next/image" 
+import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 
 const CurrentProjects = [
     {
@@ -7,7 +8,7 @@ const CurrentProjects = [
         name: 'Wessex Footware',
         work: 'Lead, developer and primary designer',
         href: 'https://web-project-tau.vercel.app/',
-        desc: 'I worked in a team of 4 on a website for wessex footware, that at the time had no online presence. I did the designing for the project on figma, and then did alot of dev work with the team making the website. I did the rectangle modules, some navbar, about us and the contact us pages.',
+        desc: 'I worked in a team of 4 on a website for wessex footware, that at the time had no online presence. I did: The design using figma, setting up team with trello to set tasks for everyone, dev work on all pages making the navs, rectangle modules for main, all of contact other then the map and about us and the product grid.',
         color:'border-purple-300',
         imageSrc: '/proj_one.PNG',
         imageAlt: 'Project 1 image',
@@ -17,7 +18,7 @@ const CurrentProjects = [
         name: 'This Website!',
         work: 'All dev and design',
         href: '/',
-        desc: 'I worked by myself to develop and design the website with Next.js, Tailwind CSS, Figma and some Rive for the animations. This was my first time using all these other then Figma.',
+        desc: 'I worked by myself to develop and design the website with Next.js, Tailwind CSS, Figma and some Rive for the animations like the one on top of this page! This was my first time using all these other then Figma.',
         color:'border-purple-300',
         imageSrc: '/proj_three.PNG',
         imageAlt: 'Project 1 image',
@@ -35,12 +36,21 @@ const CurrentProjects = [
 ]
 
 export default function About() {
+    const STATE_MACHINE_NAME = "form_in_progress";
+    const { RiveComponent, rive } = useRive({
+      src: "robotV2.riv",
+      stateMachines: "State Machine 1",
+      autoplay: true
+    });
     return (
         <div> 
-            <div className="m-2 pb-px ml-10 text-gray-700 font-bold">
-                <h1 className="text-5xl sm:text-8xl mt-28 lmao font-bold"> Projects page / </h1>
+            <div className=" sm:float-right clearfix mb-10 mt-20 " style={{height: "45vh",width: "50vw",}}>
+                <RiveComponent />
+            </div>
+            <div className="pb-px ml-10 text-gray-700 font-bold mt-30">
+                <h1 className="pt-32 text-5xl sm:text-8xl lmao font-bold "> Projects page / </h1>
                 <h1 className="text-4xl sm:text-5xl mt-2 sm:mt-0 font-bold"> My past projects on web and more.</h1>
-                <p className="text-3xl mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project to get sent to it.</p>
+                <p className="text-3xl pb-32 mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project to get sent to it.</p>
             </div>
                 {CurrentProjects.map((Products) => (
                     <a key={Products.project} href={Products.href}>
