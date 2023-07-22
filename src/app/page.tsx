@@ -12,8 +12,8 @@ export default function Home() {
     <main>
       <div className="mt-20 mb-20 ml-5">
         <Image className="float-right mr-40" src="placeholder_top.svg" alt="dash2" width={700} height={500}/>
-         <h1 className="text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold flex"> Welcome! </h1>
-         <p className="text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
+         <h1 className="text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold flex"> Under development! </h1>
+         <p className="text-6xl m-2 font-semibold text-gray-600 ">alot of the website is unfinished but should be by the end of summer :D</p>
       </div>
       <div>
          <Image className='m-6 flex' src="/dow.png" alt="dash2" width={50} height={50}/>
