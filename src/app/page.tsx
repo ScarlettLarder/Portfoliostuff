@@ -1,13 +1,19 @@
+"use client"
 import Image from "next/image" 
-
+import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 export default function Home() {
+  const STATE_MACHINE_NAME = "form_in_progress";
+  const { RiveComponent, rive } = useRive({
+      src: "fish_gamingV3.riv",
+      stateMachines: "State Machine 1",
+      autoplay: true
+    });
   return (
     <main>
       <div className="mt-20 mb-20 ml-5">
         <Image className="float-right mr-40" src="placeholder_top.svg" alt="dash2" width={700} height={500}/>
          <h1 className="text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold flex"> Welcome! </h1>
          <p className="text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
-        
       </div>
       <div>
          <Image className='m-6 flex' src="/dow.png" alt="dash2" width={50} height={50}/>
@@ -65,10 +71,13 @@ export default function Home() {
               <p className="text-4xl mx-16 pb-px mt-5 text-gray-600 font-bold whitespace-normal"> I enjoy a variety of things,</p>
               <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> like video making, with my youtube channel that I try to upload on often, i also enjoy</p>
               <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal"> gaming, reading and drawing (not very good at drawing thought).</p>
-              <Image className="float-right mr-60 mt-5 mb-10" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
-              <Image className='m-10 flex' src="/dow.png" alt="dash2" width={45} height={50}/>
-              <Image className='m-10' src="/dow.png" alt="dash2" width={45} height={50}/>
-              <Image className='ml-10' src="/dow.png" alt="dash2" width={45} height={50}/>
+              <Image className="float-right mt-5 mr-20 mb-10" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
+              <Image className='ml-4' src="/dow.png" alt="dash2" width={45} height={50}/>
+              <div className="pl-96 pt-12">
+                <div className="h-72 sm:h-96 w-2/5">
+                  <RiveComponent />
+                </div>
+              </div>
         </div>
       </div>
       <div className="bg-[url('/contliny.svg')] bg-no-repeat bg-left bg-contain">
