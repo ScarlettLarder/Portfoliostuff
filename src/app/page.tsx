@@ -1,6 +1,21 @@
 "use client"
 import Image from "next/image" 
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
+
+const Rive_robot = () => {
+  const STATE_MACHINE_NAME = "form_in_progress";
+  const { RiveComponent, rive } = useRive({
+      src: "robotV2.riv",
+      stateMachines: "State Machine 1",
+      autoplay: true
+    });
+    return (
+      <div className="sm:float-right clearfix h-72 mt-20 sm:h-96 w-full sm:w-3/5" >
+        <RiveComponent />
+      </div>
+    )
+}
+
 export default function Home() {
   const STATE_MACHINE_NAME = "form_in_progress";
   const { RiveComponent, rive } = useRive({
@@ -14,6 +29,7 @@ export default function Home() {
         <Image className="float-right mr-40" src="placeholder_top.svg" alt="dash2" width={700} height={500}/>
          <h1 className="text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold flex"> Under development! </h1>
          <p className="text-6xl m-2 font-semibold text-gray-600 ">alot of the website is unfinished but should be by the end of summer :D</p>
+         <Rive_robot />
       </div>
       <div>
          <Image className='m-6 flex' src="/dow.png" alt="dash2" width={50} height={50}/>
