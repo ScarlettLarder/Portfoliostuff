@@ -51,7 +51,7 @@ export default function About() {
                                     alt={Products.imageAlt}
                                     width={600} 
                                     height={400}/>
-                            </div>   
+                            </div> 
                             <div className="pl-5 px-3 ml-2 sm:ml-6 mb-">
                                 <h2 className="text-3xl mt-10 font-normal">{Products.project}</h2>
                                 <h1 className="lmao text-7xl font-bold text-gray-700 ">{Products.name}</h1>
