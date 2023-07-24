@@ -23,16 +23,6 @@ const CurrentProjects = [
         imageSrc: '/proj_three.PNG',
         imageAlt: 'Project 1 image',
     },    
-    {
-        project: 'Project #3',
-        name: 'Wessex Footware',
-        work: 'A developer and primary designer',
-        href: 'https://web-project-tau.vercel.app/',
-        desc: 'I worked in a team of 4 on a website for wessex footware, that at the time had no online presence. I did the designing for the project on figma, and then did alot of dev work with the team making the website. I did the rectangle modules, some navbar, about us and the contact us pages.',
-        color:'border-purple-300',
-        imageSrc: '/proj_one.PNG',
-        imageAlt: 'Project 1 image',
-    },
 ]
 
 export default function About() {
