@@ -14,6 +14,7 @@ export default function RootLayout({
   return (
       <html lang='en'>
           <head>
+              <link rel="stylesheet" href="https://use.typekit.net/aky3scy.css"/>
               <body>
                 <nav className="text-lg sm:text-2xl flex border border-b-2 border-l-0 t-0 border-r-0 bg-white border-gray-400 gap-0 font-semibold fixed top-0 w-full">
                     <a href="/" className="py-1 m-2 ml-10 sm:mt-2 my-1 mr-0.5 sm:mr-4 font-medium text-gray-600 ">Scarlett&apos;s portfolio</a>
