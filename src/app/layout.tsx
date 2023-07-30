@@ -23,14 +23,14 @@ export default function RootLayout({
                       {children}
                 <nav className="text-base sm:text-2xl flex bottom-0 border border-t-2 border-l-0 t-0 border-r-0 border-gray-200 bg-purple-300">
                     <button className="bg-yellow-100 hover:bg-yellow-50 mt-2 mb-2 font-semibold py-1.5 px-1 sm:px-4 border border-gray-400 rounded shadow flex ml-2 sm:ml-10 text-gray-600">
-                          <a href="/project">Go see my project&apos;s</a>
+                          <a href="/project">All my project&apos;s</a>
                     </button>
-                    <a href="#" className="py-1 my-1 ml-2 sm:ml-6 mt-2 sm:mt-3 font-normal text-gray-500 top text-xl ">Back to the top!</a>
+                    <a href="#" className="py-1 my-1 ml-2 sm:ml-4 mt-3 sm:mt-3 font-normal text-gray-500 top sm:text-xl ">Back to the top!</a>
                       <a className="ml-2 sm:ml-5 mt-4" href="https://www.linkedin.com/in/alex-larder-066692258/">
                         <Image alt="Linked_in_logo" src="/Linked_in.png" width={25} height={30}/>
                       </a>
                       <a className='ml-2 sm:ml-5 mt-4' href="https://github.com/ScarlettLarder">
-                        <Image alt="Github_Logo" src="/git_hub.png" width={25} height={30}/>
+                        <Image alt="Github_Logo" src="/Git_hub.png" width={25} height={30}/>
                       </a>
                       <a className='ml-2 sm:ml-5 mt-4' href="https://rive.app/@Starlett/">
                         <Image alt="Rive_Logo" src="/rive.svg" width={25} height={30}/>

@@ -62,7 +62,7 @@ export default function Home() {
       </div>
       <div>
             <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left"> I am studying T-Level Digital Design, Production and development at Strode college. <br/> The course covers a wide area of digital, the first year being a general look, and learning python, and the second being web and design.</p>
-            <Image className='right-0 float-right sm:mr-32 mx-auto' src="Edu_popup.svg" alt="dash2" width={700} height={500}/>
+            <Image className='right-0 float-right lg:mr-32 mx-auto' src="Edu_popup.svg" alt="dash2" width={700} height={500}/>
             <p className="text-3xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-6 text-gray-700 font-normal whitespace-normal text-center sm:text-left"> Some of my skills include...</p>
             <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 sm:pb-px sm:mt-2 text-gray-600 font-normal whitespace-normal text-center pb-3  sm:text-left"> Video editing, web development, and experience with design, <br/> Rive and Figma.</p>
             <Image className='sm:ml-24 sm:mt-10 mx-auto' src="Pop-up 4.svg" alt="dash2" width={220} height={500}/>
@@ -71,14 +71,14 @@ export default function Home() {
             
       </div>
       <div className="mt-24 pt-10 clearfix bg-green-50 border-t-4 border-b-4 border-green-200 shadow-md">
-        <div className="sm:bg-[url('/Hobbyliny.svg')] bg-none sm:bg-no-repeat bg-right bg-contain ">
+        <div className="xl:bg-[url('/Hobbyliny.svg')] bg-none xl:bg-no-repeat bg-right bg-contain ">
               <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
               <Image className=' sm:ml-10 sm:pb-10 sm:float-none px-10 mx-auto' src="hobby_line.svg" alt="dash2" width={420} height={500}/>
               <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left">I enjoy a variety of things, like video making, with my youtube channel <br/> that I try to upload on often, i also enjoy gaming, reading and drawing<br/> (not very good at drawing thought).</p>
-              <Image className="float-right mt-3 sm:mr-20 pb-10" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
+              <Image className="float-right mt-1 sm:mr-1 xl:mr-5 2xl:mr-20 pb-10 lg:w-2/4" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
               <Image className='m-6' src="/dow.png" alt="dash2" width={45} height={50}/>
-              <div className="sm:pl-96 pt-2 mt-2 pb-10">
-                <div className="h-96 sm:h-96 sm:w-2/5 w-full">
+              <div className="xl:pl-1 2xl:pl-32 pt-2 mt-2 pb-10 clearfix">
+                <div className="h-96 sm:h-96 lg:w-2/5 w-full">
                   <RiveComponent />
                 </div>
               </div>
