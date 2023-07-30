@@ -34,7 +34,7 @@ export default function About() {
     });
     return (
         <div> 
-            <div className="sm:float-right clearfix h-72 mt-20 sm:h-96 w-full sm:w-3/5" >
+            <div className="lg:float-right clearfix h-72 mt-20 sm:h-96 w-full lg:w-3/5" >
                 <RiveComponent />
             </div>
             <div className="pb-px sm:ml-20 p-5 text-gray-700 font-bold ">
@@ -44,7 +44,7 @@ export default function About() {
             </div>
                 {CurrentProjects.map((Products) => (
                     <a key={Products.project} href={Products.href}>
-                        <div className="mt-10 mb-10 sm:m-20 bg-gray-100 border-8 border-purple-300 overflow-visible clearfix">
+                        <div className="mt-10 mb-10 lg:m-20 bg-gray-100 border-8 border-purple-300 overflow-visible clearfix">
                             <div className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
                                 <Image className="m-4 float-right"
                                     src={Products.imageSrc}
