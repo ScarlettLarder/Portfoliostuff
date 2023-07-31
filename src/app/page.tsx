@@ -1,6 +1,9 @@
 "use client"
 import Image from "next/image" 
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
+import './insane.js';
+
+
 
 const Rive_robot = () => {
   const STATE_MACHINE_NAME = "form_in_progress";
@@ -26,7 +29,7 @@ export default function Home() {
     <main>
       <div className="mt-20 mb-20 ml-5">
          <Image className="sm:ml-24 mt-10 p-4 sm:float-right mx-auto" src="placeholder_top.svg" alt="Hero_placeholder" width={700} height={500}/>
-         <h1 className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold">Welcome!</h1>
+         <h1 data-value="Welcome!" className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold">Welcome!</h1>
          <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
       </div>
       <div>
@@ -37,7 +40,7 @@ export default function Home() {
       <div className="mt-32 pt-10 clearfix bg-blue-50 shadow-md  border-blue-100 border-t-4 border-b-4">
         <div className='xl:bg-[url("/backpink.svg")] bg-none sm:bg-no-repeat bg-right bg-contain overflow-visible'>
           <div className="text-center sm:text-left bg-opacity-0 sm:bg-opacity-100 ">
-            <h1 className="text-6xl xl:text-8xl mx-16 pb-px text-gray-700 lmao font-bold"> Personal </h1>
+            <h1 data-value="Personal" className="text-6xl xl:text-8xl mx-16 pb-px text-gray-700 lmao font-bold"> Personal </h1>
             <h1 className="text-6xl xl:text-8xl mx-16 sm:mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
             <Image className='sm:mt-3 sm:ml-24 sm:float-none px-10 mx-auto' src="line_personal.svg" alt="underline" width={450} height={0}/>
           </div>
