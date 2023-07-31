@@ -30,13 +30,13 @@ export default function RootLayout({
                     </span>
                     
                     <div className='flex items-center justify-between pb-3 sm:pr-20'>
-                      <a className="ml-2 sm:ml-5 mt-4" href="https://www.linkedin.com/in/alex-larder-066692258/">
+                      <a className="ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full" href="https://www.linkedin.com/in/alex-larder-066692258/">
                           <Image alt="Linked_in_logo" src="/Linked_in.png" width={25} height={30}/>
                       </a>
-                      <a className='ml-2 sm:ml-5 mt-4' href="https://github.com/ScarlettLarder">
+                      <a className='ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full' href="https://github.com/ScarlettLarder">
                           <Image alt="Github_Logo" src="/Git_hub.png" width={25} height={30}/>
                       </a>
-                      <a className='ml-2 sm:ml-5 mt-4' href="https://rive.app/@Starlett/">
+                      <a className='ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full' href="https://rive.app/@Starlett/">
                           <Image alt="Rive_Logo" src="/rive.svg" width={25} height={30}/>
                       </a>
                     </div>
