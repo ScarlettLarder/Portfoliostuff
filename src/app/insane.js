@@ -1,3 +1,7 @@
+if (typeof window === "undefined") {
+  console.log("Oops, `window` is not defined")
+}
+
 window.onload = function(){ 
   const letters = "Welcomeabcdfghijklmnopqrstuv!";
 
