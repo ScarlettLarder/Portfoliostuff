@@ -1,12 +1,14 @@
+// This is for the Welcome! text at the begining to have an animation if hovered.
+
 if (typeof window === "undefined") {
   console.log("Oops, `window` is not defined")
 }
 
 window.onload = function(){ 
+  // List of letters for the code to select from
   const letters = "Welcomeabcdfghijklmnopqrstuv!";
 
   let interval = null;
-
   document.querySelector("h1").onmouseover = event => {  
     let iteration = 0;
     

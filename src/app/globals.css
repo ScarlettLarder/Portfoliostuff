@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Basic font, and tells the website to scroll smoothly when told to scroll on its own. */
 @layer base {
   html {
     font-family: graphie, coquette;
@@ -9,6 +10,7 @@
   }
 }
 
+/* An override for the the titles. */
 @layer components {
   .lmao {
     font-family: "coquette", sans-serif;
@@ -23,9 +25,51 @@
   }
 }
 
+
+/* Enables the images inside the div to be forced inside it. Mostly a band-aid solution, but works well. */
 .clearfix:after { 
   content: " ";
   display: block; 
   height: 0; 
   clear: both;
+}
+
+/* Animation direction for the project images below */
+@keyframes pulse {
+  from, to {
+    scale: 1;
+  }
+  
+  50% {
+    scale: 1.05;
+  }
+}
+
+/* This is for the project images. It enables the image to be consistent and to "bounce" up when hovered*/
+#projectimg {
+  width: 500px;
+  aspect-ratio: 7 / 5;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#projectimg:hover{
+  animation:pulse 800ms ease-in-out;
+}
+
+#projectimg > img {  
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+/* Enables the project images to have coloured backgrounds when hovered. */
+.backproj {
+  background-color: #FAFAFA;
+  transition: 1s;
+}
+
+.backproj:hover {
+  background-color: #f7eeff;
 }

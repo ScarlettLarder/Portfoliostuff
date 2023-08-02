@@ -2,6 +2,7 @@
 import Image from "next/image" 
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 
+
 const CurrentProjects = [
     {
         project: 'Project #3',
@@ -35,6 +36,7 @@ const CurrentProjects = [
     },
 ]
 
+
 export default function About() {
     const STATE_MACHINE_NAME = "form_in_progress";
     const { RiveComponent, rive } = useRive({
@@ -48,15 +50,16 @@ export default function About() {
                 <RiveComponent />
             </div>
             <div className="pb-px sm:ml-20 p-5 text-gray-700 font-bold ">
-                <h1 className="sm:pt-32 text-5xl sm:text-8xl lmao font-bold "> Projects page / </h1>
+                <h1 data-value="Welcome!" className="sm:pt-32 text-5xl sm:text-8xl lmao font-bold "> Projects page / </h1>
                 <h1 className="text-4xl sm:text-5xl mt-2 sm:mt-0 font-bold"> My past projects on web and more.</h1>
                 <p className="text-3xl pb-10 mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project to get sent to it.</p>
+
             </div>
                 {CurrentProjects.map((Products) => (
-                    <a key={Products.project} href={Products.href}>
-                        <div className="mt-10 mb-10 lg:m-20 bg-gray-100 border-8 border-purple-300 overflow-visible clearfix">
-                            <div className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
-                                <Image className="m-4 float-right"
+                    <a key={Products.project}>
+                        <div className="mt-10 mb-10 lg:m-20 backproj  border-8 border-purple-300 overflow-visible clearfix">
+                            <div id="projectimg" className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
+                                <img className="m-4 float-right"
                                     src={Products.imageSrc}
                                     alt={Products.imageAlt}
                                     width={600} 

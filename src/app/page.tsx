@@ -4,20 +4,26 @@ import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 import './insane.js';
 
 
+// Basic rive explination 
 
-const Rive_robot = () => {
+// This is for the Rive robot to work. This is the same as other's inside the project, but they are inside other functions.
+function Rive_robot() {
+  // State machines are for the interactions and animations themselfs, like a flow chart, if cursor in hitbox, turn on cursor follow for an asset. 
   const STATE_MACHINE_NAME = "form_in_progress";
+  // This tells the function what the name of each file is for it to find it, and if there are any other factors for it to know. In this case, just autoplay is here.
   const { RiveComponent, rive } = useRive({
-      src: "robotv3.riv",
-      stateMachines: "State Machine 1",
-      autoplay: true
-    });
-    return (
-      <div className="sm:float-right pt-10 h-72 pb-22 sm:h-96 w-full sm:w-3/5 drop-shadow" >
-        <RiveComponent />
-      </div>
-    )
+    src: "robotv3.riv",
+    stateMachines: "State Machine 1",
+    autoplay: true
+  });
+  return (
+    // This is what's returned when Rive_robot is called.
+    <div className="sm:float-right pt-10 h-72 pb-22 sm:h-96 w-full sm:w-3/5 drop-shadow">
+      <RiveComponent />
+    </div>
+  );
 }
+
 export default function Home() {
   const STATE_MACHINE_NAME = "form_in_progress";
   const { RiveComponent, rive } = useRive({
@@ -40,7 +46,7 @@ export default function Home() {
       <div className="mt-32 pt-10 clearfix bg-blue-50 shadow-md  border-blue-100 border-t-4 border-b-4">
         <div className='xl:bg-[url("/backpink.svg")] bg-none sm:bg-no-repeat bg-right bg-contain overflow-visible'>
           <div className="text-center sm:text-left bg-opacity-0 sm:bg-opacity-100 ">
-            <h1 data-value="Personal" className="text-6xl xl:text-8xl mx-16 pb-px text-gray-700 lmao font-bold"> Personal </h1>
+            <h1 className="text-6xl xl:text-8xl mx-16 pb-px text-gray-700 lmao font-bold"> Personal </h1>
             <h1 className="text-6xl xl:text-8xl mx-16 sm:mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
             <Image className='sm:mt-3 sm:ml-24 sm:float-none px-10 mx-auto' src="line_personal.svg" alt="underline" width={450} height={0}/>
           </div>
@@ -53,7 +59,7 @@ export default function Home() {
           <Rive_robot />
           <Image className='sm:m-10 ml-6 static flex sm:mt-24' src="/dow.png" alt="dash2" width={45} height={50}/>
           <Image className='sm:m-10 ml-6' src="/dow.png" alt="dash2" width={45} height={50}/>
-          <Image className='sm:ml-10 ml-6' src="/dow.png" alt="dash2" width={45} height={50}/>
+          <Image className='sm:ml-10 ml-6 parra2' src="/dow.png" alt="dash2" width={45} height={50}/>
           <Image className='flex float-right' src="doordash.svg" alt="dash2" width={1000} height={500}/>
         </div>
 
