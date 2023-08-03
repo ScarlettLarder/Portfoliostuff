@@ -33,36 +33,45 @@ export default function Home() {
     });
   return (
     <main>
+     <div className="parallax">
       <div className="mt-20 mb-20 ml-5">
-         <Image className="sm:ml-24 mt-10 p-4 sm:float-right mx-auto" src="placeholder_top.svg" alt="Hero_placeholder" width={700} height={500}/>
-         <h1 data-value="Welcome!" className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold">Welcome!</h1>
+         <Image className="sm:ml-24 mt-10 p-4 sm:float-right mx-auto flex" src="placeholder_top.svg" alt="Hero_placeholder" width={700} height={500}/>
+         <h1 data-value="Welcome!" className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao flex font-bold">Welcome!</h1>
          <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
       </div>
       <div>
-         <Image className='m-6 flex' src="/dow.png" alt="downarrow" width={50} height={50}/>
-         <Image className='m-6' src="/dow.png" alt="downarrow" width={50} height={50}/>
-         <Image className='m-6' src="/dow.png" alt="downarrow" width={50} height={50}/>
+         <Image className='m-6 flex downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
+         <Image className='m-6 downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
+         <Image className='m-6 downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
       </div>
-      <div className="mt-32 pt-10 clearfix bg-blue-50 shadow-md  border-blue-100 border-t-4 border-b-4">
-        <div className='xl:bg-[url("/backpink.svg")] bg-none sm:bg-no-repeat bg-right bg-contain overflow-visible'>
-          <div className="text-center sm:text-left bg-opacity-0 sm:bg-opacity-100 ">
-            <h1 className="text-6xl xl:text-8xl mx-16 pb-px text-gray-700 lmao font-bold"> Personal </h1>
-            <h1 className="text-6xl xl:text-8xl mx-16 sm:mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
-            <Image className='sm:mt-3 sm:ml-24 sm:float-none px-10 mx-auto' src="line_personal.svg" alt="underline" width={450} height={0}/>
+      <div className="foreground">
+        <Image className='' src="/dow.png" alt="downarrow" width={50} height={50}/>
+      </div>
+      <div>
+       <p className="layer3">dwa</p>
+      </div>
+      <div className="layer1">
+        <div className="mt-32 pt-10 clearfix bg-blue-50 shadow-md  border-blue-100 border-t-4 border-b-4">
+          <div className='xl:bg-[url("/backpink.svg")] bg-none sm:bg-no-repeat bg-right bg-contain overflow-visible'>
+            <div className="text-center sm:text-left bg-opacity-0 sm:bg-opacity-100">
+              <h1 className="text-6xl xl:text-8xl mx-16 pb-px text-gray-700 lmao font-bold"> Personal </h1>
+              <h1 className="text-6xl xl:text-8xl mx-16 sm:mx-28 pb-px text-gray-700 lmao font-bold"> Statement </h1>
+              <Image className='sm:mt-3 sm:ml-24 sm:float-none px-10 mx-auto ' src="line_personal.svg" alt="underline" width={450} height={0}/>
+            </div>
+            <br/>
+            <br/>
+            <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px text-gray-700 font-bold sm:mt-4 whitespace-normal text-center sm:text-left"> Hello! I am Scarlett and welcome to my portfolio.</p>
+            <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px text-gray-600 font-bold whitespace-normal text-center sm:text-left"> Currently in college, learning web and design</p>
+            <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left"> In this website, you will find a collection of projects,<br/>my education and who I am.</p>
+            <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal static isolate float-right"> </p>
+            <div className="layer3">
+              <Rive_robot />
+            </div>
+            <Image className='sm:m-10 ml-6 flex sm:mt-24 layer3' src="/dow.png" alt="dash2" width={45} height={50}/>
+            <Image className='sm:ml-10 ml-6 parra2' src="/dow.png" alt="dash2" width={45} height={50}/>
+            <Image className='flex float-right' src="doordash.svg" alt="dash2" width={1000} height={500}/>
           </div>
-          <br/>
-          <br/>
-          <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px text-gray-700 font-bold sm:mt-4 whitespace-normal text-center sm:text-left"> Hello! I am Scarlett and welcome to my portfolio.</p>
-          <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px text-gray-600 font-bold whitespace-normal text-center sm:text-left"> Currently in college, learning web and design</p>
-          <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left"> In this website, you will find a collection of projects,<br/>my education and who I am.</p>
-          <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal static isolate float-right"> </p>
-          <Rive_robot />
-          <Image className='sm:m-10 ml-6 static flex sm:mt-24' src="/dow.png" alt="dash2" width={45} height={50}/>
-          <Image className='sm:m-10 ml-6' src="/dow.png" alt="dash2" width={45} height={50}/>
-          <Image className='sm:ml-10 ml-6 parra2' src="/dow.png" alt="dash2" width={45} height={50}/>
-          <Image className='flex float-right' src="doordash.svg" alt="dash2" width={1000} height={500}/>
         </div>
-
       </div>
       <Image className='flex float-right ' src="eduliny2.svg" alt="dash2" width={400} height={400}/>
       <div>
@@ -76,21 +85,23 @@ export default function Home() {
             <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 sm:pb-px sm:mt-2 text-gray-600 font-normal whitespace-normal text-center pb-3  sm:text-left"> Video editing, web development, and experience with design, <br/> Rive and Figma.</p>
             <Image className='sm:ml-24 sm:mt-10 mx-auto' src="Pop-up 4.svg" alt="dash2" width={220} height={500}/>
             <Image className='' src="eduliny.svg" alt="dash2" width={900} height={500}/>
-            <Image className='ml-6 float-left' src="/dow.png" alt="dash2" width={45} height={50}/>
+            <Image className='ml-6 float-left downarrow' src="/dow.png" alt="dash2" width={45} height={50}/>
             
       </div>
-      <div className="mt-24 pt-10 clearfix bg-green-50 border-t-4 border-b-4 border-green-200 shadow-md">
-        <div className="xl:bg-[url('/Hobbyliny.svg')] bg-none xl:bg-no-repeat bg-right bg-contain ">
-              <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
-              <Image className=' sm:ml-10 sm:pb-10 sm:float-none px-10 mx-auto' src="hobby_line.svg" alt="dash2" width={420} height={500}/>
-              <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left">I enjoy a variety of things, like video making, with my youtube channel <br/> that I try to upload on often, i also enjoy gaming, reading and drawing<br/> (not very good at drawing thought).</p>
-              <Image className="float-right mt-1 sm:mr-1 xl:mr-5 2xl:mr-20 pb-10 lg:w-2/4" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
-              <Image className='m-6' src="/dow.png" alt="dash2" width={45} height={50}/>
-              <div className="xl:pl-1 2xl:pl-32 pt-2 mt-2 pb-10 clearfix">
-                <div className="h-96 sm:h-96 lg:w-2/5 w-full">
-                  <RiveComponent />
+      <div className="layer2">
+        <div className="mt-40 pt-10 clearfix bg-green-50 border-t-4 border-b-4 border-green-200 shadow-md">
+          <div className="xl:bg-[url('/Hobbyliny.svg')] bg-none xl:bg-no-repeat bg-right bg-contain ">
+                <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
+                <Image className=' sm:ml-10 sm:pb-10 sm:float-none px-10 mx-auto ' src="hobby_line.svg" alt="dash2" width={420} height={500}/>
+                <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left">I enjoy a variety of things, like video making, with my youtube channel <br/> that I try to upload on often, i also enjoy gaming, reading and drawing<br/> (not very good at drawing thought).</p>
+                <Image className="float-right mt-1 sm:mr-1 xl:mr-5 2xl:mr-20 pb-10 lg:w-2/4" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
+                <Image className='m-6 downarrow' src="/dow.png" alt="dash2" width={45} height={50}/>
+                <div className="xl:pl-1 2xl:pl-32 pt-2 mt-2 pb-10 clearfix">
+                  <div className="h-96 sm:h-96 lg:w-2/5 w-full">
+                    <RiveComponent />
+                  </div>
                 </div>
-              </div>
+          </div>
         </div>
       </div>
       <div className="bg-[url('/contliny.svg')] bg-no-repeat bg-left bg-bottom  bg-contain">
@@ -110,6 +121,7 @@ export default function Home() {
 
             </div>
       </div>
+     </div>
     </main>
   )
 }
