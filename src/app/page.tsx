@@ -33,24 +33,23 @@ export default function Home() {
     });
   return (
     <main>
-     <div className="parallax">
-      <div className="mt-20 mb-20 ml-5">
-         <Image className="sm:ml-24 mt-10 p-4 sm:float-right mx-auto flex" src="placeholder_top.svg" alt="Hero_placeholder" width={700} height={500}/>
-         <h1 data-value="Welcome!" className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao flex font-bold">Welcome!</h1>
-         <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
+      <div className="parallax">
+        <div className="mt-20 mb-20 ml-5">
+          <Image className="sm:ml-24 mt-10 p-4 sm:float-right mx-auto flex" src="placeholder_top.svg" alt="Hero_placeholder" width={700} height={500}/>
+          <h1 data-value="Welcome!" className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao flex font-bold">Welcome!</h1>
+          <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
+        </div>
+        <div>
+          <Image className='m-6 flex downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
+          <Image className='m-6 downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
+          <Image className='m-6 downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
+        </div>
+        <div className="foreground layer2">
+          <Image className='' src="/dow.png" alt="downarrow" width={50} height={50}/>
+        </div>
       </div>
-      <div>
-         <Image className='m-6 flex downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
-         <Image className='m-6 downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
-         <Image className='m-6 downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
-      </div>
-      <div className="foreground">
-        <Image className='' src="/dow.png" alt="downarrow" width={50} height={50}/>
-      </div>
-      <div>
-       <p className="layer3">dwa</p>
-      </div>
-      <div className="layer1">
+      <div className="parallax">
+       <div className="">
         <div className="mt-32 pt-10 clearfix bg-blue-50 shadow-md  border-blue-100 border-t-4 border-b-4">
           <div className='xl:bg-[url("/backpink.svg")] bg-none sm:bg-no-repeat bg-right bg-contain overflow-visible'>
             <div className="text-center sm:text-left bg-opacity-0 sm:bg-opacity-100">
@@ -64,7 +63,7 @@ export default function Home() {
             <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px text-gray-600 font-bold whitespace-normal text-center sm:text-left"> Currently in college, learning web and design</p>
             <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left"> In this website, you will find a collection of projects,<br/>my education and who I am.</p>
             <p className="text-4xl mx-16 pb-px text-gray-600 font-normal whitespace-normal static isolate float-right"> </p>
-            <div className="layer3">
+            <div className="layer2">
               <Rive_robot />
             </div>
             <Image className='sm:m-10 ml-6 flex sm:mt-24 layer3' src="/dow.png" alt="dash2" width={45} height={50}/>
@@ -72,6 +71,7 @@ export default function Home() {
             <Image className='flex float-right' src="doordash.svg" alt="dash2" width={1000} height={500}/>
           </div>
         </div>
+      </div>
       </div>
       <Image className='flex float-right ' src="eduliny2.svg" alt="dash2" width={400} height={400}/>
       <div>
@@ -83,12 +83,17 @@ export default function Home() {
             <Image className='right-0 float-right lg:mr-32 mx-auto' src="Edu_popup.svg" alt="dash2" width={700} height={500}/>
             <p className="text-3xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-6 text-gray-700 font-normal whitespace-normal text-center sm:text-left"> Some of my skills include...</p>
             <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 sm:pb-px sm:mt-2 text-gray-600 font-normal whitespace-normal text-center pb-3  sm:text-left"> Video editing, web development, and experience with design, <br/> Rive and Figma.</p>
-            <Image className='sm:ml-24 sm:mt-10 mx-auto' src="Pop-up 4.svg" alt="dash2" width={220} height={500}/>
+            <div className="layer2">
+              <Image className='sm:ml-24 sm:mt-10 mx-auto layer' src="Pop-up 4.svg" alt="dash2" width={220} height={500}/>
+            </div>
+            <div className="foreground layer2">
+              <Image className='' src="/dow.png" alt="downarrow" width={50} height={50}/>
+            </div>
             <Image className='' src="eduliny.svg" alt="dash2" width={900} height={500}/>
             <Image className='ml-6 float-left downarrow' src="/dow.png" alt="dash2" width={45} height={50}/>
             
       </div>
-      <div className="layer2">
+      <div className="layer1">
         <div className="mt-40 pt-10 clearfix bg-green-50 border-t-4 border-b-4 border-green-200 shadow-md">
           <div className="xl:bg-[url('/Hobbyliny.svg')] bg-none xl:bg-no-repeat bg-right bg-contain ">
                 <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
@@ -121,7 +126,6 @@ export default function Home() {
 
             </div>
       </div>
-     </div>
     </main>
   )
 }

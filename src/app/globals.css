@@ -102,17 +102,7 @@
 .parallax {
   height: 100vh;
   overflow-x: hidden;
-
   perspective: 1px;
-}
-
-
-.parallax-layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .layer1 {
@@ -120,6 +110,12 @@
   height: 100%;
   width: 100%;
   background-size: cover;
+  perspective: 2px;
+}
+
+.layer1obj {
+  transform: translateZ(-1px) scale(1);
+  perspective: 2px;
   
 }
 

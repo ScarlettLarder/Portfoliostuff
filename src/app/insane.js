@@ -1,4 +1,5 @@
 // This is for the Welcome! text at the begining to have an animation if hovered.
+"use client"
 
 if (typeof window === "undefined") {
   console.log("Oops, `window` is not defined")
