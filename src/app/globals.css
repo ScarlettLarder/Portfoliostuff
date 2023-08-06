@@ -98,28 +98,3 @@
   background-color: #f7eeff;
 }
 
-/* This is for the parallax scroll of the website on the main.*/
-.parallax {
-  height: 100vh;
-  overflow-x: hidden;
-  perspective: 1px;
-}
-
-.layer1 {
-  transform: translateZ(-0.1px) scale(1.1);
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  perspective: 2px;
-}
-
-.layer1obj {
-  transform: translateZ(-1px) scale(1);
-  perspective: 2px;
-  
-}
-
-.layer2 {
-  transform: translateZ(-0.5px) scale(1);
-  background-color: aqua;
-}
