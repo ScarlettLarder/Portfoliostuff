@@ -19,12 +19,11 @@ function Rive_robot() {
   });
   return (
     // This is what's returned when Rive_robot is called.
-    <div className="sm:float-right pt-10 h-72 pb-22 sm:h-96 w-full sm:w-3/5 drop-shadow-lg">
+    <div className="sm:float-right pt-10 h-72 pb-22 sm:h-96 w-full sm:w-3/5 drop-shadow-xl popupimg">
       <RiveComponent />
     </div>
   );
 }
-
 
 export default function Home() {
   const STATE_MACHINE_NAME = "form_in_progress";
@@ -38,15 +37,12 @@ export default function Home() {
       <div>
 
         <Parallax pages={3.1}>
-          <nav className="text-lg sm:text-2xl flex border border-b-2 border-l-0 t-0 border-r-0 bg-white border-gray-400 gap-0 font-semibold fixed top-0 w-full">
-            <a href="/" className="py-1 m-2 ml-10 sm:mt-2 my-1 mr-0.5 sm:mr-4 font-medium text-gray-600 ">Scarlett&apos;s portfolio</a>
-            <a href="/project" className="text-base sm:text-2xl pt-1.5 sm:py-1 sm:m-2 my-1 ml-1 font-normal float-right text-gray-500">See all projects</a>     
-          </nav>
-          
           <ParallaxLayer offset={0} speed={1} factor={2}>
               <Image className="sm:ml-24 mt-10 p-4 sm:float-right mx-auto flex" src="placeholder_top.svg" alt="Hero_placeholder" width={700} height={500}/>
-              <h1 data-value="Welcome!" className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao flex font-bold">Welcome!</h1>
-              <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
+              <div className="ml-5">
+                <h1 data-value="Welcome!" className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao flex font-bold">Welcome!</h1>
+                <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
+              </div>
               <div>
                 <Image className='m-6 flex downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
                 <Image className='m-6 downarrow' src="/dow.png" alt="downarrow" width={50} height={50}/>
@@ -65,9 +61,9 @@ export default function Home() {
                   <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px text-gray-700 font-bold sm:mt-4 whitespace-normal text-center sm:text-left"> Hello! I am Scarlett and welcome to my portfolio.</p>
                   <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px text-gray-600 font-bold whitespace-normal text-center sm:text-left"> Currently in college, learning web and design</p>
                   <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left"> In this website, you will find a collection of projects,<br/>my education and who I am.</p>
-                  <Image className='sm:m-10 ml-6 flex sm:mt-24 layer3' src="/dow.png" alt="dash2" width={45} height={50}/>
-                  <Image className='sm:ml-10 ml-6 parra2' src="/dow.png" alt="dash2" width={45} height={50}/>
-                  <Image className='flex float-right' src="doordash.svg" alt="dash2" width={1000} height={500}/>
+                  <Image className='sm:m-10 ml-6 flex sm:mt-24' src="/dow.png" alt="dash2" width={45} height={50}/>
+                  <Image className='sm:ml-10 ml-6' src="/dow.png" alt="dash2" width={45} height={50}/>
+                  <Image className='flex float-right selection:' src="doordash.svg" alt="dash2" width={1000} height={500}/>
                   <ParallaxLayer offset={0.5} speed={0.2} factor={0}>
                     <Rive_robot />
                   </ParallaxLayer>
@@ -81,11 +77,11 @@ export default function Home() {
               <Image className='flex sm:mx-16 ' src="backtedu.svg" alt="dash2" width={420} height={500}/>
               <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left"> I am studying T-Level Digital Design, Production and development at Strode college. <br/> The course covers a wide area of digital, the first year being a general look, and learning python, and the second being web and design.</p>
               <ParallaxLayer offset={0.6} speed={0.2} factor={0}>
-                <Image className='right-0 float-right lg:mr-32 mx-auto' src="Edu_popup.svg" alt="dash2" width={700} height={500}/>
+                <Image className='right-0 float-right lg:mr-32 mx-auto drop-shadow-xl popupimg' src="Edu_popup.svg" alt="dash2" width={700} height={500}/>
               </ParallaxLayer>
               <p className="text-3xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-6 text-gray-700 font-normal whitespace-normal text-center sm:text-left"> Some of my skills include...</p>
               <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 sm:pb-px sm:mt-2 text-gray-600 font-normal whitespace-normal text-center pb-3  sm:text-left"> Video editing, web development, and experience with design, <br/> Rive and Figma.</p>
-              <Image className='sm:ml-24 sm:mt-10 mx-auto layer' src="Pop-up 4.svg" alt="dash2" width={220} height={500}/>
+              <Image className='sm:ml-24 sm:mt-10 mx-auto drop-shadow-xl popupimg' src="Pop-up 4.svg" alt="dash2" width={220} height={500}/>
           </ParallaxLayer>
 
           <ParallaxLayer offset={1.9} speed={0.8} factor={0.5}>
@@ -95,11 +91,11 @@ export default function Home() {
                   <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
                   <Image className=' sm:ml-10 sm:pb-10 sm:float-none px-10 mx-auto ' src="hobby_line.svg" alt="dash2" width={420} height={500}/>
                   <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left">I enjoy a variety of things, like video making, with my youtube channel <br/> that I try to upload on often, i also enjoy gaming, reading and drawing<br/> (not very good at drawing thought).</p>
-                  <Image className="float-right mt-1 sm:mr-1 xl:mr-5 2xl:mr-20 pb-10 lg:w-2/4" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
+                  <Image className="float-right mt-1 sm:mr-1 xl:mr-5 2xl:mr-20 pb-10 lg:w-2/4 popupimg drop-shadow-xl " src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
                   <Image className='m-6 downarrow' src="/dow.png" alt="dash2" width={45} height={50}/>
                   <div className="xl:pl-1 2xl:pl-32 pt-2 mt-2 pb-10 clearfix">
                   <ParallaxLayer offset={0.9} speed={0.2} factor={0}>
-                    <div className="h-96 sm:h-96 lg:w-2/5 w-full">
+                    <div className="h-96 sm:h-96 lg:w-2/5 w-full ">
                       <RiveComponent />
                     </div>
                   </ParallaxLayer>

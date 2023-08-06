@@ -64,6 +64,11 @@
   border-radius: inherit;
 }
 
+/*For the pop-ups around the screen to "bounce" like the project page (:*/
+.popupimg:hover{
+  animation:pulse 800ms ease-in-out;
+}
+
 /* This part enables the down pulse that the arrows have when hovered on.*/
 @keyframes down {
   from, to {
@@ -85,6 +90,7 @@
 
 .downarrow:hover{
   animation:down 800ms ease-in-out;
+  animation-duration: 1000ms;
 }
 
 
