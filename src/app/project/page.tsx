@@ -54,9 +54,9 @@ export default function About() {
                 <RiveComponent />
             </div>
             <div className="pb-px sm:ml-20 p-5 text-gray-700 font-bold ">
-                <h1 data-value="Welcome!" className="sm:pt-32 text-5xl sm:text-8xl lmao font-bold "> Projects page / </h1>
+                <h1 className="sm:pt-32 text-5xl sm:text-8xl lmao font-bold projtext"> Projects page / </h1>
                 <h1 className="text-4xl sm:text-5xl mt-2 sm:mt-0 font-bold"> My past projects on web and more.</h1>
-                <p className="text-3xl pb-10 mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project to get sent to it.</p>
+                <p className="text-3xl pb-10 mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project image to get sent to it.</p>
 
             </div>
                 {CurrentProjects.map((Products) => (
@@ -78,6 +78,26 @@ export default function About() {
                         </div>
                     </a>
                 ))}
+                <nav className="text-base sm:text-2xl flex items-center justify-between bottom-0 border border-t-2 border-l-0 t-0 border-gray-200 bg-purple-200">
+                    <span className='flex'>
+                      <button className="bg-yellow-100 hover:bg-yellow-50 mt-2 mb-2 font-semibold py-1.5 px-1 sm:px-4 border-gray-400 rounded shadow ml-2 sm:ml-10 text-gray-600 duration-75">
+                          <a href="/project">All my project&apos;s</a>
+                      </button>
+                      <a href="#" className="mt-3 mb-2 text-xl py-1.5 px-1 sm:px-4 rounded ml-2 sm:ml-4 text-gray-500 duration-75 hover:bg-purple-300 hover:shadow">Back to the top!</a>
+                    </span>
+                    
+                    <div className='flex items-center justify-between pb-3 sm:pr-20'>
+                      <a className="ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full duration-75" href="https://www.linkedin.com/in/alex-larder-066692258/">
+                          <Image alt="Linked_in_logo" src="/Linked_in.png" width={25} height={30}/>
+                      </a>
+                      <a className='ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full duration-75' href="https://github.com/ScarlettLarder">
+                          <Image alt="Github_Logo" src="/Git_hub.png" width={25} height={30}/>
+                      </a>
+                      <a className='ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full duration-75' href="https://rive.app/@Starlett/">
+                          <Image alt="Rive_Logo" src="/rive.svg" width={25} height={30}/>
+                      </a>
+                    </div>
+                </nav>
         </div>
     )
 }

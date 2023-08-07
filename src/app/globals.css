@@ -101,6 +101,16 @@
 }
 
 .backproj:hover {
-  background-color: #f7eeff;
+  background-color: #e8ecff;
 }
 
+/* This enables the diffrenct colours when text is highlighted*/
+.projtext:hover {
+  color: #d8b4fe;
+  transition: 0.5s;
+  text-shadow: 2px 2px 5px #e7d1ff;
+}
+
+.fadeout:hover {
+  opacity: 0.5;
+}

@@ -25,6 +25,7 @@ function Rive_robot() {
   );
 }
 
+
 export default function Home() {
   const STATE_MACHINE_NAME = "form_in_progress";
   const { RiveComponent, rive } = useRive({
@@ -36,9 +37,14 @@ export default function Home() {
     <main>
       <div>
 
-        <Parallax pages={3.1}>
+        <Parallax pages={3.7}>
+          <nav className="text-lg sm:text-2xl flex border border-b-2 border-l-0 t-0 border-r-0 bg-white border-gray-400 gap-0 font-semibold fixed top-0 w-full">
+            <a href="/" className="py-1 m-2 ml-10 sm:mt-2 my-1 mr-0.5 sm:mr-4 font-medium text-gray-600 ">Scarlett&apos;s portfolio</a>
+            <a href="/project" className="text-base sm:text-2xl pt-1.5 sm:py-1 sm:m-2 my-1 ml-1 font-normal float-right text-gray-500">See all projects</a>     
+          </nav>
+          
           <ParallaxLayer offset={0} speed={1} factor={2}>
-              <Image className="sm:ml-24 mt-10 p-4 sm:float-right mx-auto flex" src="placeholder_top.svg" alt="Hero_placeholder" width={700} height={500}/>
+              <Image className="sm:ml-24 mt-28 p-4 sm:float-right mx-auto flex" src="placeholder_top.svg" alt="Hero_placeholder" width={700} height={500}/>
               <div className="ml-5">
                 <h1 data-value="Welcome!" className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao flex font-bold">Welcome!</h1>
                 <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
@@ -50,7 +56,7 @@ export default function Home() {
               </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={0.9} speed={0.8} factor={0.4}>
+          <ParallaxLayer offset={0.9} speed={0.6} factor={0.4}>
               <div className="mt-32 pt-10 clearfix bg-blue-50 shadow-md  border-blue-100 border-t-4 border-b-4">
                 <div className='xl:bg-[url("/backpink.svg")] bg-none sm:bg-no-repeat bg-right bg-contain overflow-visible'>
                   <div className="text-center sm:text-left bg-opacity-0 sm:bg-opacity-100">
@@ -64,14 +70,14 @@ export default function Home() {
                   <Image className='sm:m-10 ml-6 flex sm:mt-24' src="/dow.png" alt="dash2" width={45} height={50}/>
                   <Image className='sm:ml-10 ml-6' src="/dow.png" alt="dash2" width={45} height={50}/>
                   <Image className='flex float-right selection:' src="doordash.svg" alt="dash2" width={1000} height={500}/>
-                  <ParallaxLayer offset={0.5} speed={0.2} factor={0}>
+                  <ParallaxLayer offset={0.5} speed={0.1} factor={0}>
                     <Rive_robot />
                   </ParallaxLayer>
                 </div>
               </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.2} speed={1} factor={0.4}>
+          <ParallaxLayer offset={1.4} speed={0.5} factor={0.4}>
               <Image className='flex float-right ' src="eduliny2.svg" alt="dash2" width={400} height={400}/>
               <h1 className="text-6xl xl:text-8xl mx-16 pb-px mt-28 text-gray-700 lmao font-bold bg-local"> Education + Skills</h1>
               <Image className='flex sm:mx-16 ' src="backtedu.svg" alt="dash2" width={420} height={500}/>
@@ -84,16 +90,15 @@ export default function Home() {
               <Image className='sm:ml-24 sm:mt-10 mx-auto drop-shadow-xl popupimg' src="Pop-up 4.svg" alt="dash2" width={220} height={500}/>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.9} speed={0.8} factor={0.5}>
-            <br/>
-            <div className="mt-40 pt-10 clearfix bg-green-50 border-t-4 border-b-4 border-green-200 shadow-md">
+          <ParallaxLayer offset={2} speed={0.4} factor={0.2}>
+            <div className="pt-10 clearfix bg-green-50 border-t-4 border-b-4 border-green-200 shadow-md">
             <div className="xl:bg-[url('/Hobbyliny.svg')] bg-none xl:bg-no-repeat bg-right bg-contain ">
                   <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
                   <Image className=' sm:ml-10 sm:pb-10 sm:float-none px-10 mx-auto ' src="hobby_line.svg" alt="dash2" width={420} height={500}/>
                   <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left">I enjoy a variety of things, like video making, with my youtube channel <br/> that I try to upload on often, i also enjoy gaming, reading and drawing<br/> (not very good at drawing thought).</p>
                   <Image className="float-right mt-1 sm:mr-1 xl:mr-5 2xl:mr-20 pb-10 lg:w-2/4 popupimg drop-shadow-xl " src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
                   <Image className='m-6 downarrow' src="/dow.png" alt="dash2" width={45} height={50}/>
-                  <div className="xl:pl-1 2xl:pl-32 pt-2 mt-2 pb-10 clearfix">
+                  <div className="xl:pl-1 2xl:pl-32 pt-2 mt-2 clearfix">
                   <ParallaxLayer offset={0.9} speed={0.2} factor={0}>
                     <div className="h-96 sm:h-96 lg:w-2/5 w-full ">
                       <RiveComponent />
@@ -104,9 +109,9 @@ export default function Home() {
             </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2.4} speed={0.8} factor={0.5}>
+          <ParallaxLayer offset={3} speed={0.1} factor={0.2}>
             <div className="bg-[url('/contliny.svg')] bg-no-repeat bg-left bg-bottom  bg-contain">
-              <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold mt-20"> Contact Me </h1>
+              <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Contact Me </h1>
               <Image className='sm:ml-10 sm:pb-10 sm:float-none mx-auto' src="backtcont.svg" alt="dash2" width={520} height={500}/>
               <div>
                   <span className="inline-flex items-center mt-16">
@@ -125,8 +130,8 @@ export default function Home() {
 
         </Parallax>
         <nav className="text-lg sm:text-2xl flex border border-b-2 border-l-0 t-0 border-r-0 bg-white border-gray-400 gap-0 font-semibold fixed top-0 w-full">
-            <a href="/" className="py-1 m-2 ml-10 sm:mt-2 my-1 mr-0.5 sm:mr-4 font-medium text-gray-600 ">Scarlett&apos;s portfolio</a>
-            <a href="/project" className="text-base sm:text-2xl pt-1.5 sm:py-1 sm:m-2 my-1 ml-1 font-normal float-right text-gray-500">See all projects</a>     
+            <a href="/" className="py-1 m-2 ml-10 sm:mt-2 my-1 mr-0.5 sm:mr-4 font-medium text-gray-600 fadeout">Scarlett&apos;s portfolio</a>
+            <a href="/project" className="text-base sm:text-2xl pt-1.5 sm:py-1 sm:m-2 my-1 ml-1 font-normal float-right text-gray-500 fadeout">See all projects</a>     
         </nav>
       </div>
     </main>
