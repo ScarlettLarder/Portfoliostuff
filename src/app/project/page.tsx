@@ -5,7 +5,7 @@ import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 
 const CurrentProjects = [
     {
-        project: 'Project #3',
+        project: 'Project #5',
         name: 'Wessex Footware',
         work: 'Lead, developer and primary designer',
         href: 'https://web-project-tau.vercel.app/',
@@ -15,7 +15,7 @@ const CurrentProjects = [
         imageAlt: 'Wessex footware',
     },
     {
-        project: 'Project #2',
+        project: 'Project #4',
         name: 'This Website!',
         work: 'All dev and design',
         href: '/',
@@ -25,7 +25,7 @@ const CurrentProjects = [
         imageAlt: 'Website image',
     },
     {
-        project: 'Project #1',
+        project: 'Project #3',
         name: 'Strode Stripes',
         work: 'Logo, social media, stream layout',
         href: 'https://www.youtube.com/@strodestripes',
@@ -33,6 +33,26 @@ const CurrentProjects = [
         color:'border-purple-300',
         imageSrc: '/strode_esports.PNG',
         imageAlt: 'Strode_esports',
+    },
+    {
+        project: 'Project #2',
+        name: 'My Youtube Channel',
+        work: 'Editing, recording, thumbnails ect',
+        href: 'https://www.youtube.com/channel/UCoaGlVJ72VTG-3Frlz28qgw',
+        desc: 'This is my youtube channel! I try to upload often, although I havent been able to lately due to college and work. I use premiere pro and after effects for editing, photoshop for thumbnails and other assets.',
+        color:'border-purple-300',
+        imageSrc: '/YT_Scarlett.PNG',
+        imageAlt: 'My_Yt_Channel',
+    },
+    {
+        project: 'Project #1',
+        name: 'Rive Projects',
+        work: 'Art and animation',
+        href: 'https://rive.app/@Starlett/',
+        desc: 'I am currently learning rive, that makes interactive animations for web and software with their runtime to get better at digital art. While I am still learning, you can check out my latest animations on my profile.',
+        color:'border-purple-300',
+        imageSrc: '/rive_Scarlett.PNG',
+        imageAlt: 'My_Rive_Profile',
     },
 ]
 
@@ -56,14 +76,14 @@ export default function About() {
             <div className="pb-px sm:ml-20 p-5 text-gray-700 font-bold ">
                 <h1 className="sm:pt-32 text-5xl sm:text-8xl lmao font-bold projtext"> Projects page / </h1>
                 <h1 className="text-4xl sm:text-5xl mt-2 sm:mt-0 font-bold"> My past projects on web and more.</h1>
-                <p className="text-3xl pb-10 mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project image to get sent to it.</p>
+                <p className="text-3xl pb-10 mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project to get sent to it.</p>
 
             </div>
                 {CurrentProjects.map((Products) => (
-                    <a key={Products.project}>
+                    <a key={Products.project} href={Products.href}>
                         <div className="mt-10 mb-10 lg:m-20 backproj  border-8 border-purple-300 overflow-visible clearfix">
                             <div id="projectimg" className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
-                                <img className="m-4 float-right"
+                                  <img className="m-4 float-right"
                                     src={Products.imageSrc}
                                     alt={Products.imageAlt}
                                     width={600} 

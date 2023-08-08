@@ -55,6 +55,8 @@
 
 #projectimg:hover{
   animation:pulse 800ms ease-in-out;
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 #projectimg > img {  
