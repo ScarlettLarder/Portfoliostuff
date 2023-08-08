@@ -1,12 +1,15 @@
 "use client"
 import Image from "next/image" 
+//For Rive animations
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
+//For Parallax
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+//For Reduced motion on parallax
+import { useReducedMotion } from '@react-spring/web'
 import './insane.js';
 
 
-// Basic rive explination 
-
+// ---Basic rive explination---
 // This is for the Rive robot to work. This is the same as other's inside the project, but they are inside other functions.
 function Rive_robot() {
   // State machines are for the interactions and animations themselfs, like a flow chart, if cursor in hitbox, turn on cursor follow for an asset. 
@@ -25,33 +28,9 @@ function Rive_robot() {
   );
 }
 
-function lol() {
-  return (
-    <nav>
-      <div className="text-base sm:text-2xl flex items-center justify-between bottom-0 w-full border border-t-2 border-l-0 t-0 border-gray-200 bg-purple-200">
-        <div className='flex items-center justify-between pb-3 sm:pr-20'>
-          <a className="ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full duration-75" href="https://www.linkedin.com/in/alex-larder-066692258/">
-              <Image alt="Linked_in_logo" src="/Linked_in.png" width={25} height={30}/>
-          </a>
-          <a className='ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full duration-75' href="https://github.com/ScarlettLarder">
-            <Image alt="Github_Logo" src="/Git_hub.png" width={25} height={30}/>
-          </a>
-          <a className='ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full duration-75' href="https://rive.app/@Starlett/">
-            <Image alt="Rive_Logo" src="/rive.svg" width={25} height={30}/>
-          </a>
-        </div>
-        <span className='flex'>
-          <button className="bg-yellow-100 hover:bg-yellow-50 mt-2 mb-2 font-semibold py-1.5 px-1 sm:px-4 border-gray-400 rounded shadow ml-2 sm:ml-10 text-gray-600 duration-75">
-            <a href="/project">All my project&apos;s</a>
-          </button>
-          <a href="#" className="mt-3 mb-2 text-xl py-1.5 px-1 sm:px-4 rounded ml-2 sm:ml-4 text-gray-500 duration-75 hover:bg-purple-300 hover:shadow">Back to the top!</a>
-        </span>
-      </div>
-    </nav>
-  )
-}
 
 export default function Home() {
+  const reducedMotion = useReducedMotion()
   const STATE_MACHINE_NAME = "form_in_progress";
   const { RiveComponent, rive } = useRive({
       src: "fish_gamingV3.riv",
@@ -65,6 +44,7 @@ export default function Home() {
         <Parallax pages={3.7}>
           <nav className="text-lg sm:text-2xl flex border border-b-2 border-l-0 t-0 border-r-0 bg-white border-gray-400 gap-0 font-semibold fixed top-0 w-full">
             <a href="/" className="py-1 m-2 ml-10 sm:mt-2 my-1 mr-0.5 sm:mr-4 font-medium text-gray-600 ">Scarlett&apos;s portfolio</a>
+            {reducedMotion ? <p>You're using reduced motion!</p> : true}
             <a href="/project" className="text-base sm:text-2xl pt-1.5 sm:py-1 sm:m-2 my-1 ml-1 font-normal float-right text-gray-500">See all projects</a>     
           </nav>
           
@@ -82,7 +62,7 @@ export default function Home() {
           </ParallaxLayer>
 
           <ParallaxLayer offset={0.9} speed={0.6} factor={0.4}>
-              <div className="mt-32 pt-10 clearfix bg-blue-50 shadow-md  border-blue-100 border-t-4 border-b-4">
+              <div className="mt-32 pt-10 clearfix PS shadow-md  border-blue-200 border-t-4 border-b-4">
                 <div className='xl:bg-[url("/backpink.svg")] bg-none sm:bg-no-repeat bg-right bg-contain overflow-visible'>
                   <div className="text-center sm:text-left bg-opacity-0 sm:bg-opacity-100">
                     <h1 className="text-6xl xl:text-8xl mx-16 pb-px text-gray-700 lmao font-bold"> Personal </h1>
@@ -107,7 +87,7 @@ export default function Home() {
               <h1 className="text-6xl xl:text-8xl mx-16 pb-px mt-28 text-gray-700 lmao font-bold bg-local"> Education + Skills</h1>
               <Image className='flex sm:mx-16 ' src="backtedu.svg" alt="dash2" width={420} height={500}/>
               <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left"> I am studying T-Level Digital Design, Production and development at Strode college. <br/> The course covers a wide area of digital, the first year being a general look, and learning python, and the second being web and design.</p>
-              <ParallaxLayer offset={0.6} speed={0.2} factor={0}>
+              <ParallaxLayer offset={0.5} speed={0.1} factor={0}>
                 <Image className='right-0 float-right lg:mr-32 mx-auto drop-shadow-xl popupimg' src="Edu_popup.svg" alt="dash2" width={700} height={500}/>
               </ParallaxLayer>
               <p className="text-3xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-6 text-gray-700 font-normal whitespace-normal text-center sm:text-left"> Some of my skills include...</p>
@@ -115,8 +95,8 @@ export default function Home() {
               <Image className='sm:ml-24 sm:mt-10 mx-auto drop-shadow-xl popupimg' src="Pop-up 4.svg" alt="dash2" width={220} height={500}/>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2} speed={0.4} factor={0.2}>
-            <div className="pt-10 clearfix bg-green-50 border-t-4 border-b-4 border-green-200 shadow-md">
+          <ParallaxLayer offset={2} speed={0.2} factor={0.2}>
+            <div className="pt-10 clearfix EDU border-t-4 border-b-4 border-green-200 shadow-md">
             <div className="xl:bg-[url('/Hobbyliny.svg')] bg-none xl:bg-no-repeat bg-right bg-contain ">
                   <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
                   <Image className=' sm:ml-10 sm:pb-10 sm:float-none px-10 mx-auto ' src="hobby_line.svg" alt="dash2" width={420} height={500}/>
@@ -124,7 +104,7 @@ export default function Home() {
                   <Image className="float-right mt-1 sm:mr-1 xl:mr-5 2xl:mr-20 pb-10 lg:w-2/4 popupimg drop-shadow-xl " src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
                   <Image className='m-6 downarrow' src="/dow.png" alt="dash2" width={45} height={50}/>
                   <div className="xl:pl-1 2xl:pl-32 pt-2 mt-2 clearfix">
-                  <ParallaxLayer offset={0.9} speed={0.2} factor={0}>
+                  <ParallaxLayer offset={0.7} speed={0.1} factor={0}>
                     <div className="h-96 sm:h-96 lg:w-2/5 w-full ">
                       <RiveComponent />
                     </div>
