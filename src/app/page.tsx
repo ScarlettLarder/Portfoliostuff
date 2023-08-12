@@ -48,7 +48,7 @@ export default function Home() {
             <a href="/project" className="text-base sm:text-2xl pt-1.5 sm:py-1 sm:m-2 my-1 ml-1 font-normal float-right text-gray-500">See all projects</a>     
           </nav>
           
-          <ParallaxLayer offset={0} speed={1} factor={2}>
+          <ParallaxLayer offset={0} speed={0.5} factor={1}>
               <Image className="sm:ml-24 mt-28 p-4 sm:float-right mx-auto flex" src="placeholder_top.svg" alt="Hero_placeholder" width={700} height={500}/>
               <div className="ml-5">
                 <h1 data-value="Welcome!" className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao flex font-bold">Welcome!</h1>
@@ -95,7 +95,7 @@ export default function Home() {
               <Image className='sm:ml-24 sm:mt-10 mx-auto drop-shadow-xl popupimg' src="Pop-up 4.svg" alt="dash2" width={220} height={500}/>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2} speed={0.2} factor={0.2}>
+          <ParallaxLayer offset={2} speed={0.6} factor={0.4}>
             <div className="pt-10 clearfix EDU border-t-4 border-b-4 border-green-200 shadow-md">
             <div className="xl:bg-[url('/Hobbyliny.svg')] bg-none xl:bg-no-repeat bg-right bg-contain ">
                   <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
@@ -114,7 +114,7 @@ export default function Home() {
             </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={3} speed={0.1} factor={0.2}>
+          <ParallaxLayer offset={3} speed={0.1} factor={0.4}>
             <div className="bg-[url('/contliny.svg')] bg-no-repeat bg-left bg-bottom  bg-contain">
               <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Contact Me </h1>
               <Image className='sm:ml-10 sm:pb-10 sm:float-none mx-auto' src="backtcont.svg" alt="dash2" width={520} height={500}/>

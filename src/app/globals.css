@@ -45,7 +45,7 @@
   }
 }
 
-/* This is for the project images. It enables the image to be consistent and to "bounce" up when hovered*/
+/*For the project images. It enables the image to be consistent and to "bounce" up when hovered*/
 #projectimg {
   width: 500px;
   aspect-ratio: 7 / 5;
