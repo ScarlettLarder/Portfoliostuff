@@ -89,7 +89,7 @@ export default function Home() {
       </div>
       <div className="mt-24 pt-10 clearfix gradient2 border-t-4 border-b-4 border-green-200 shadow-md">
         <div className="sm:bg-[url('/Hobbyliny.svg')] bg-none sm:bg-no-repeat bg-bottom bg-right bg-contain ">
-              <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
+              <h1 className="text-6xl xl:text-8xl text-center sm:text-left  mx-16 pb-px text-gray-700 lmao font-bold"> Hobbiesd </h1>
               <Image className=' sm:ml-10 sm:pb-10 sm:float-none px-10 mx-auto' src="hobby_line.svg" alt="dash2" width={420} height={500}/>
               <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px mt-2 text-gray-600 font-normal whitespace-normal text-center sm:text-left">I enjoy a variety of things, like video making, with my youtube channel that I try to upload on often, i also enjoy gaming, reading and drawing (not very good at drawing thought).</p>
               <Image className="float-right mt-3 sm:mr-20 pb-10" src="pop_up_hobby.svg" alt="dash2" width={800} height={500}/>
