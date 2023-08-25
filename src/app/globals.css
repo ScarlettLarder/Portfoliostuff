@@ -40,11 +40,45 @@ body:has(.projectimg[data-color="scarlett"]:hover) {
   transition: 400ms;
 }
 
-body:has(.projectimg[data-color="strode"]:hover) {
-  background-color: #f3a3a3;
+body:has(.projectimg[data-color="yt"]:hover) {
+  background-color: #ececec;
   transition: 400ms;
 }
 
+body:has(.projectimg[data-color="rive"]:hover) {
+  background-color: #e1c3e2;
+  transition: 400ms;
+}
+
+body:has(.projectimg[data-color="strode"]:hover) {
+  background-color: #c2b5c5;
+  transition: 400ms;
+}
+
+.projectimg[data-color="wessex"]:hover {
+  border-color: #ED8971;
+  transition: 400ms;
+}
+
+.projectimg[data-color="scarlett"]:hover {
+  border-color: #a2e5ff;
+  transition: 400ms;
+}
+
+.projectimg[data-color="strode"]:hover {
+  border-color: #da2a2a;
+  transition: 400ms;
+}
+
+.projectimg[data-color="yt"]:hover {
+  border-color: #f10000;
+  transition: 400ms;
+}
+
+.projectimg[data-color="rive"]:hover {
+  border-color: #8BB8F5;
+  transition: 400ms;
+}
 /* Enables the images inside the div to be forced inside it. Mostly a band-aid solution, but works well. */
 .clearfix:after { 
   content: " ";
