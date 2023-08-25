@@ -4,7 +4,7 @@ import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 
 
 // ---Basic rive explination---
-// This is for the Rive robot to work. This is the same as other's inside the project, but they are inside other functions.
+// This is for the Rive robot to work. This is the same as others inside the project, but they are inside other functions.
 function Rive_robot() {
   // State machines are for the interactions and animations themselfs, like a flow chart, if cursor in hitbox, turn on cursor follow for an asset. 
   const STATE_MACHINE_NAME = "form_in_progress";
@@ -15,7 +15,7 @@ function Rive_robot() {
     autoplay: true
   });
   return (
-    // This is what's returned when Rive_robot is called.
+    // This is whats returned when Rive_robot is called.
     <div className="sm:float-right sm:mr-20 pt-10 h-72 pb-34 sm:h-96 w-full sm:w-2/5 drop-shadow-xl popupimg">
       <RiveComponent />
     </div>
@@ -48,7 +48,7 @@ export default function Home() {
             <Image className='sm:mt-3 sm:ml-24 sm:float-none px-10 mx-auto text-center sm:text-left bg-opacity-0 sm:bg-opacity-100' src="line_personal.svg" alt="dash2" width={450} height={0}/>
             <p className="text-2xl sm:text-4xl mx-4 sm:mx-16 pb-px text-gray-700 font-bold mt-4 whitespace-normal text-center sm:text-left"> Hello! I am Scarlett and welcome to my portfolio.</p>
             <Rive_robot />
-            <p className="text-2xl sm:text-3xl ml-16 text-gray-600 font-normal whitespace-normal text-center sm:text-left"> I'm Currently in college, learning web and design. In this website, you will find out more about me, who I am and a selection of projects.</p>
+            <p className="text-2xl sm:text-3xl ml-16 text-gray-600 font-bold whitespace-normal text-center sm:text-left"> I'm Currently in college, learning web and design. In this website, you will find out more about me, who I am and a selection of projects.</p>
             <Image className='sm:m-5 ml-6 static flex sm:mt-5' src="/dow.png" alt="dash2" width={45} height={50}/>
             <Image className='sm:m-5 ml-6' src="/dow.png" alt="dash2" width={45} height={50}/>
             <Image className='sm:ml-5 ml-6' src="/dow.png" alt="dash2" width={45} height={50}/>
@@ -62,7 +62,7 @@ export default function Home() {
       <p className="text-2xl sm:text-3xl mt-4 ml-16 text-gray-600 font-normal whitespace-normal text-center sm:text-left"> 
       I am currently studying T-Level, Digital design, production and development at Strode college. 
       The first year covers python and has exams that test on legislation, problem solving, programming, emerging issues in tech, 
-      data (how to handle it for example), and security. The second year covers more web, with multiple frameworks, designing, databases 
+      data how to handle it for example, and security. The second year covers more web, with multiple frameworks, designing, databases 
       and how to use APIs. Oh and also work experience, and workshops from companies like IBM and red hat. 
       You can learn more about the course <a className=" text-green-300 hover:text-green-200 focus:text-green-100" href="https://www.strode-college.ac.uk/courses/our-courses/digital-production,-design-and-d/?subject=&type=16744"> here!</a>
       </p>
