@@ -26,6 +26,24 @@
   }
 }
 
+.projectimg{
+  transition: scale 100ms;
+}
+
+body:has(.projectimg[datacolor="wessex"]:hover) {
+  background-color: #dbe7e6;
+  transition: 400ms;
+}
+
+body:has(.projectimg[datacolor="scarlett"]:hover) {
+  background-color: #fde7f8;
+  transition: 400ms;
+}
+
+body:has(.projectimg[datacolor="strode"]:hover) {
+  background-color: #f3a3a3;
+  transition: 400ms;
+}
 
 /* Enables the images inside the div to be forced inside it. Mostly a band-aid solution, but works well. */
 .clearfix:after { 
@@ -41,7 +59,7 @@
     scale: 1;
   }
   50% {
-    scale: 1.05;
+    scale: 0.95;
   }
 }
 
@@ -95,9 +113,14 @@
   animation-duration: 1000ms;
 }
 
+/*For the top nav bar to be on the top, without the background getting in the way.*/
+.top {
+  z-index: 2;
+}
+
 .gradient {
   position: relative;
-  background-image: linear-gradient(63deg, rgba(243,248,255,1) 0%, rgba(239,246,255,1) 17%, rgb(212, 230, 255) 100%);
+  background-image: linear-gradient(63deg, rgba(243,248,255,1) 0%, rgba(239,246,255,1) 17%, rgb(194, 219, 255) 100%);
   z-index: 1;
 }
 
@@ -108,7 +131,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(63deg, rgba(243,248,255,1) 0%, rgba(239,246,255,1) 17%, rgba(180,212,255,1) 100%);
+  background-image: linear-gradient(63deg, rgba(243,248,255,1) 0%, rgb(209, 227, 250) 17%, rgb(166, 200, 245) 100%);
   z-index: -1;
   transition: opacity 0.5s linear;
   opacity: 0;
@@ -120,7 +143,7 @@
 
 .gradient2 {
   position: relative;
-  background-image: linear-gradient(63deg, rgb(243, 255, 243) 0%, rgb(239, 255, 239) 17%, rgb(215, 255, 212) 100%);
+  background-image: linear-gradient(63deg, rgb(243, 255, 243) 0%, rgb(227, 252, 227) 17%, rgb(205, 250, 202) 100%);
   z-index: 1;
 }
 
@@ -131,7 +154,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(63deg, rgba(243,248,255,1) 0%, rgb(239, 255, 239) 17%, rgb(180, 255, 184) 100%);
+  background-image: linear-gradient(63deg, rgb(243, 255, 245) 0%, rgb(223, 255, 223) 17%, rgb(165, 245, 169) 100%);
   z-index: -1;
   transition: opacity 0.5s linear;
   opacity: 0;
@@ -156,18 +179,4 @@
   color: #d8b4fe;
   transition: 0.5s;
   text-shadow: 2px 2px 5px #e7d1ff;
-}
-
-.fadeout:hover {
-  opacity: 0.5;
-}
-
-.PS {
-  background: rgb(213,232,255);
-  background: linear-gradient(16deg, rgb(213, 231, 252) 0%, rgb(240, 246, 255) 100%);
-}
-
-.EDU {
-  background: rgb(213,255,217);
-  background: linear-gradient(16deg, rgb(213, 250, 217) 0%, rgb(241, 255, 243) 100%);
 }

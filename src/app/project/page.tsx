@@ -2,7 +2,6 @@
 import Image from "next/image" 
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 
-
 const CurrentProjects = [
     {
         project: 'Project #5',
@@ -13,6 +12,7 @@ const CurrentProjects = [
         color:'border-purple-300',
         imageSrc: '/proj_one.PNG',
         imageAlt: 'Wessex footware',
+        datacolor: 'wessex'
     },
     {
         project: 'Project #4',
@@ -23,6 +23,7 @@ const CurrentProjects = [
         color:'border-purple-300',
         imageSrc: '/proj_three.PNG',
         imageAlt: 'Website image',
+        datacolor: 'scarlett'
     },
     {
         project: 'Project #3',
@@ -33,6 +34,7 @@ const CurrentProjects = [
         color:'border-purple-300',
         imageSrc: '/strode_esports.PNG',
         imageAlt: 'Strode_esports',
+        datacolor: 'strode'
     },
     {
         project: 'Project #2',
@@ -43,6 +45,7 @@ const CurrentProjects = [
         color:'border-purple-300',
         imageSrc: '/YT_Scarlett.PNG',
         imageAlt: 'My_Yt_Channel',
+        datacolor: 'yt'
     },
     {
         project: 'Project #1',
@@ -53,9 +56,9 @@ const CurrentProjects = [
         color:'border-purple-300',
         imageSrc: '/rive_Scarlett.PNG',
         imageAlt: 'My_Rive_Profile',
+        datacolor: 'rive'
     },
 ]
-
 
 export default function About() {
     const STATE_MACHINE_NAME = "form_in_progress";
@@ -66,23 +69,18 @@ export default function About() {
     });
     return (
         <div> 
-            <nav className="text-lg sm:text-2xl flex border border-b-2 border-l-0 t-0 border-r-0 bg-white border-gray-400 gap-0 font-semibold fixed top-0 w-full">
-                <a href="/" className="py-1 m-2 ml-10 sm:mt-2 my-1 mr-0.5 sm:mr-4 font-medium text-gray-600  fadeout">Scarlett&apos;s portfolio</a>
-                <a href="/project" className="text-base sm:text-2xl pt-1.5 sm:py-1 sm:m-2 my-1 ml-1 font-normal float-right text-gray-500 fadeout">See all projects</a>     
-            </nav>
             <div className="lg:float-right clearfix h-72 mt-20 sm:h-96 w-full lg:w-3/5" >
                 <RiveComponent />
             </div>
             <div className="pb-px sm:ml-20 p-5 text-gray-700 font-bold ">
-                <h1 className="sm:pt-32 text-5xl sm:text-8xl lmao font-bold projtext"> Projects page / </h1>
+                <h1 className="sm:pt-32 text-5xl sm:text-8xl lmao font-bold"> Projects page / </h1>
                 <h1 className="text-4xl sm:text-5xl mt-2 sm:mt-0 font-bold"> My past projects on web and more.</h1>
                 <p className="text-3xl pb-10 mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project to get sent to it.</p>
-
             </div>
                 {CurrentProjects.map((Products) => (
                     <a key={Products.project} href={Products.href}>
-                        <div className="mt-10 mb-10 lg:m-20 backproj  border-8 border-purple-300 overflow-visible clearfix">
-                            <div id="projectimg" className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
+                        <div datacolor={Products.datacolor} className="mt-10 bg-gray-50 hover:bg-grey-100 mb-10 lg:m-20 border-8 bg-grey-100 border-purple-300 overflow-visible clearfix projectimg">
+                            <div className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
                                   <img className="m-4 float-right"
                                     src={Products.imageSrc}
                                     alt={Products.imageAlt}
@@ -98,26 +96,6 @@ export default function About() {
                         </div>
                     </a>
                 ))}
-                <nav className="text-base sm:text-2xl flex items-center justify-between bottom-0 border border-t-2 border-l-0 t-0 border-gray-200 bg-purple-200">
-                    <span className='flex'>
-                      <button className="bg-yellow-100 hover:bg-yellow-50 mt-2 mb-2 font-semibold py-1.5 px-1 sm:px-4 border-gray-400 rounded shadow ml-2 sm:ml-10 text-gray-600 duration-75">
-                          <a href="/project">All my project&apos;s</a>
-                      </button>
-                      <a href="#" className="mt-3 mb-2 text-xl py-1.5 px-1 sm:px-4 rounded ml-2 sm:ml-4 text-gray-500 duration-75 hover:bg-purple-300 hover:shadow">Back to the top!</a>
-                    </span>
-                    
-                    <div className='flex items-center justify-between pb-3 sm:pr-20'>
-                      <a className="ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full duration-75" href="https://www.linkedin.com/in/alex-larder-066692258/">
-                          <Image alt="Linked_in_logo" src="/Linked_in.png" width={25} height={30}/>
-                      </a>
-                      <a className='ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full duration-75' href="https://github.com/ScarlettLarder">
-                          <Image alt="Github_Logo" src="/Git_hub.png" width={25} height={30}/>
-                      </a>
-                      <a className='ml-2 sm:ml-5 mt-4 p-2 delay-100 hover:bg-purple-300 rounded-full duration-75' href="https://rive.app/@Starlett/">
-                          <Image alt="Rive_Logo" src="/rive.svg" width={25} height={30}/>
-                      </a>
-                    </div>
-                </nav>
         </div>
     )
 }
