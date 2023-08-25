@@ -30,17 +30,17 @@
   transition: scale 100ms;
 }
 
-body:has(.projectimg[datacolor="wessex"]:hover) {
+body:has(.projectimg[data-color="wessex"]:hover) {
   background-color: #dbe7e6;
   transition: 400ms;
 }
 
-body:has(.projectimg[datacolor="scarlett"]:hover) {
+body:has(.projectimg[data-color="scarlett"]:hover) {
   background-color: #fde7f8;
   transition: 400ms;
 }
 
-body:has(.projectimg[datacolor="strode"]:hover) {
+body:has(.projectimg[data-color="strode"]:hover) {
   background-color: #f3a3a3;
   transition: 400ms;
 }

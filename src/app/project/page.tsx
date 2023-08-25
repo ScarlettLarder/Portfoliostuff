@@ -79,7 +79,7 @@ export default function About() {
             </div>
                 {CurrentProjects.map((Products) => (
                     <a key={Products.project} href={Products.href}>
-                        <div datacolor={Products.datacolor} className="mt-10 bg-gray-50 hover:bg-grey-100 mb-10 lg:m-20 border-8 bg-grey-100 border-purple-300 overflow-visible clearfix projectimg">
+                        <div data-color={Products.datacolor} className="mt-10 bg-gray-50 hover:bg-grey-100 mb-10 lg:m-20 border-8 bg-grey-100 border-purple-300 overflow-visible clearfix projectimg">
                             <div className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
                                   <img className="m-4 float-right"
                                     src={Products.imageSrc}
