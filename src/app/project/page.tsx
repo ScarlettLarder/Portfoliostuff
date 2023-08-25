@@ -73,7 +73,7 @@ export default function About() {
                 <RiveComponent />
             </div>
             <div className="pb-px sm:ml-20 p-5 text-gray-700 font-bold ">
-                <h1 className="sm:pt-32 text-5xl sm:text-8xl lmao font-bold"> Projectsss page / </h1>
+                <h1 className="sm:pt-32 text-5xl sm:text-8xl lmao font-bold"> Projects page / </h1>
                 <h1 className="text-4xl sm:text-5xl mt-2 sm:mt-0 font-bold"> My past projects on web and more.</h1>
                 <p className="text-3xl pb-10 mt-2 sm:mt-5 text-gray-500 font-bold">Click on a project to get sent to it.</p>
             </div>
