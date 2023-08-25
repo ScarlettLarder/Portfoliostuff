@@ -45,7 +45,7 @@ const CurrentProjects = [
         color:'border-purple-300',
         imageSrc: '/YT_Scarlett.PNG',
         imageAlt: 'My_Yt_Channel',
-        datacolor: 'yt'
+        datacolor: 'yrt'
     },
     {
         project: 'Project #1',
