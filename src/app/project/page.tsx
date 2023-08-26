@@ -9,7 +9,7 @@ const CurrentProjects = [
         name: 'Wessex Footware',
         work: 'Lead, developer and primary designer',
         href: 'https://web-project-tau.vercel.app/',
-        desc: 'I worked in a team of 4 on a website for wessex footware, that at the time had no online presence. I did: The design using figma, setting up team with trello to set tasks for everyone, dev work on all pages making the navs, rectangle modules for main, all of contact other then the map and about us and the product grid.',
+        desc: 'I worked in a team of 4 on a website for wessex footware, that at the time had no online presence. I did: The design using figma, setting up team with trello to set tasks for everyone, made the main and all products, did some dev work for the other pages, refactored the code and did alot of the work on mobile versions.',
         color:'border-purple-300',
         imageSrc: '/Projects_Wessex.PNG',
         imageAlt: 'Wessex footware',
