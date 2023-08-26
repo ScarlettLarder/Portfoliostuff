@@ -2,26 +2,27 @@
 import Image from "next/image" 
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 
+
 const CurrentProjects = [
     {
-        project: 'Project #5',
+        project: 'Project #1',
         name: 'Wessex Footware',
         work: 'Lead, developer and primary designer',
         href: 'https://web-project-tau.vercel.app/',
         desc: 'I worked in a team of 4 on a website for wessex footware, that at the time had no online presence. I did: The design using figma, setting up team with trello to set tasks for everyone, dev work on all pages making the navs, rectangle modules for main, all of contact other then the map and about us and the product grid.',
         color:'border-purple-300',
-        imageSrc: '/proj_one.PNG',
+        imageSrc: '/Projects_Wessex.PNG',
         imageAlt: 'Wessex footware',
         datacolor: 'wessex'
     },
     {
-        project: 'Project #4',
+        project: 'Project #2',
         name: 'This Website!',
         work: 'All dev and design',
         href: '/',
         desc: 'I worked by myself to develop and design the website with Next.js, Tailwind CSS, Figma and some Rive for the animations like the one on top of this page! This was my first time using all these other then Figma.',
         color:'border-purple-300',
-        imageSrc: '/proj_three.PNG',
+        imageSrc: '/Projects_Portfolio.PNG',
         imageAlt: 'Website image',
         datacolor: 'scarlett'
     },
@@ -32,38 +33,39 @@ const CurrentProjects = [
         href: 'https://www.youtube.com/@strodestripes',
         desc: 'Strode Stripes is the esports team for strode college, and I made the logo, managed the social media (youtube, twitter, twitch) and made the stream layout. I also did some casting on the stream, while in the compitition.',
         color:'border-purple-300',
-        imageSrc: '/strode_esports.PNG',
+        imageSrc: '/Projects_Strode.png',
         imageAlt: 'Strode_esports',
         datacolor: 'strode'
     },
     {
-        project: 'Project #2',
+        project: 'Project #4',
         name: 'My Youtube Channel',
         work: 'Editing, recording, thumbnails ect',
         href: 'https://www.youtube.com/channel/UCoaGlVJ72VTG-3Frlz28qgw',
         desc: 'This is my youtube channel! I try to upload often, although I havent been able to lately due to college and work. I use premiere pro and after effects for editing, photoshop for thumbnails and other assets.',
         color:'border-purple-300',
-        imageSrc: '/YT_Scarlett.PNG',
+        imageSrc: '/Projects_YT.PNG',
         imageAlt: 'My_Yt_Channel',
         datacolor: 'yt'
     },
     {
-        project: 'Project #1',
+        project: 'Project #5',
         name: 'Rive Projects',
         work: 'Art and animation',
         href: 'https://rive.app/@Starlett/',
         desc: 'I am currently learning rive, that makes interactive animations for web and software with their runtime to get better at digital art. While I am still learning, you can check out my latest animations on my profile.',
         color:'border-purple-300',
-        imageSrc: '/rive_Scarlett.PNG',
+        imageSrc: '/Projects_Rive.PNG',
         imageAlt: 'My_Rive_Profile',
         datacolor: 'rive'
     },
 ]
 
+
 export default function About() {
     const STATE_MACHINE_NAME = "form_in_progress";
     const { RiveComponent, rive } = useRive({
-      src: "robotV2.riv",
+      src: "Rive_RobotProjects.riv",
       stateMachines: "State Machine 1",
       autoplay: true
     });
@@ -81,7 +83,7 @@ export default function About() {
                     <a key={Products.project} href={Products.href}>
                         <div data-color={Products.datacolor} className="mt-10 bg-gray-50 hover:bg-grey-100 mb-10 lg:m-20 border-8 bg-grey-100 border-purple-300 overflow-visible clearfix projectimg">
                             <div className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
-                                  <img className="m-4 float-right popupimg mx-auto"
+                                  <img className="m-4 float-right hover:scale-105 duration-150 delay-75 mx-auto"
                                     src={Products.imageSrc}
                                     alt={Products.imageAlt}
                                     width={600} 

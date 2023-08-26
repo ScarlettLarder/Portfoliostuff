@@ -10,7 +10,6 @@
     }
   }
 
-
 /* An override for the the titles. */
 @layer components {
   .lmao {
@@ -26,10 +25,8 @@
   }
 }
 
-.projectimg{
-  transition: scale 100ms;
-}
 
+/* This enables the colour changes when hoving on a project using the data-color on the project dictionary. */
 body:has(.projectimg[data-color="wessex"]:hover) {
   background-color: #dbe7e6;
   transition: 400ms;
@@ -41,17 +38,17 @@ body:has(.projectimg[data-color="scarlett"]:hover) {
 }
 
 body:has(.projectimg[data-color="yt"]:hover) {
-  background-color: #ececec;
+  background-color: #a7ff9f;
   transition: 400ms;
 }
 
 body:has(.projectimg[data-color="rive"]:hover) {
-  background-color: #e1c3e2;
+  background-color: #313131;
   transition: 400ms;
 }
 
 body:has(.projectimg[data-color="strode"]:hover) {
-  background-color: #c2b5c5;
+  background-color: #999999;
   transition: 400ms;
 }
 
@@ -71,80 +68,21 @@ body:has(.projectimg[data-color="strode"]:hover) {
 }
 
 .projectimg[data-color="yt"]:hover {
-  border-color: #f10000;
+  border-color: #fb8dff;
   transition: 400ms;
 }
 
 .projectimg[data-color="rive"]:hover {
-  border-color: #8BB8F5;
+  border-color: #7B66DA;
   transition: 400ms;
 }
+
 /* Enables the images inside the div to be forced inside it. Mostly a band-aid solution, but works well. */
 .clearfix:after { 
   content: " ";
   display: block; 
   height: 0; 
   clear: both;
-}
-
-/* Animation direction for the project images below */
-@keyframes pulse {
-  from, to {
-    scale: 1;
-  }
-  50% {
-    scale: 0.95;
-  }
-}
-
-/*For the project images. It enables the image to be consistent and to "bounce" up when hovered*/
-#projectimg {
-  width: 500px;
-  aspect-ratio: 7 / 5;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-#projectimg:hover{
-  animation:pulse 800ms ease-in-out;
-  opacity: 0.8;
-  transition: 0.5s;
-}
-
-#projectimg > img {  
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: inherit;
-}
-
-/*For the pop-ups around the screen to "bounce" like the project page (:*/
-.popupimg:hover{
-  animation:pulse 800ms ease-in-out;
-}
-
-/* This part enables the down pulse that the arrows have when hovered on.*/
-@keyframes down {
-  from, to {
-    scale: 1;
-    margin-top: 0%;
-  }
-  50% {
-    scale: 1.05;
-    margin-top: 5%;
-  }
-}
-
-.downarrow {
-  width: 50px;
-  aspect-ratio: 1/2;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.downarrow:hover{
-  animation:down 800ms ease-in-out;
-  animation-duration: 1000ms;
 }
 
 /*For the top nav bar to be on the top, without the background getting in the way.*/
@@ -196,21 +134,4 @@ body:has(.projectimg[data-color="strode"]:hover) {
 
 .gradient2:hover::before {
   opacity: 1;
-}
-
-/* Enables the project images to have coloured backgrounds when hovered. */
-.backproj {
-  background-color: #FAFAFA;
-  transition: 1s;
-}
-
-.backproj:hover {
-  background-color: #e8ecff;
-}
-
-/* This enables the diffrenct colours when text is highlighted*/
-.projtext:hover {
-  color: #d8b4fe;
-  transition: 0.5s;
-  text-shadow: 2px 2px 5px #e7d1ff;
 }

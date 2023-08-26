@@ -1,6 +1,7 @@
 import './globals.css';
 import Image from 'next/image'
 
+
 export default function RootLayout({
   children,
 }: {
@@ -30,13 +31,13 @@ export default function RootLayout({
                     </span>
                     <div className='flex items-center justify-between pb-2 sm:pr-20'>
                         <a className="ml-2 sm:ml-5 mt-2 p-2 delay-100 bg-purple-300 hover:bg-purple-200 rounded-lg duration-75 border-neutral-100 border-2" href="https://www.linkedin.com/in/alex-larder-066692258/">
-                            <Image alt="Linked_in_logo" src="/Linked_in.png" width={25} height={30}/>
+                            <Image alt="Linked_in_logo" src="/Logo_Linkedin.png" width={25} height={30}/>
                         </a>
                         <a className='ml-2 sm:ml-5 mt-2 p-2 delay-100 bg-purple-300 hover:bg-purple-200 rounded-full duration-75 border-neutral-100 border-2' href="https://github.com/ScarlettLarder">
-                            <Image alt="Github_Logo" src="/Git_hub.png" width={25} height={30}/>
+                            <Image alt="Github_Logo" src="/Logo_Github.png" width={25} height={30}/>
                         </a>
                         <a className='ml-2 sm:ml-5 mt-2 p-2 delay-100 bg-purple-300 hover:bg-purple-200 rounded-md duration-75 border-neutral-100 border-2 drop-shadow-xl' href="https://rive.app/@Starlett/">
-                            <Image alt="Rive_Logo" src="/rive.svg" width={25} height={30}/>
+                            <Image alt="Rive_Logo" src="/Logo_rive.svg" width={25} height={30}/>
                         </a>
                     </div>
                 </nav>
