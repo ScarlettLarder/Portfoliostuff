@@ -31,7 +31,7 @@ const CurrentProjects = [
         name: 'Strode Stripes',
         work: 'Logo, social media, stream layout',
         href: 'https://www.youtube.com/@strodestripes',
-        desc: 'Strode Stripes is the esports team for strode college, and I made the logo, managed the social media (youtube, twitter, twitch) and made the stream layout. I also did some casting on the stream, while in the compitition.',
+        desc: 'Strode Stripes is the esports team for strode college, and I made the logo, managed the social media (youtube, twitter, twitch) and made the stream layout. I also did some casting on the stream, while in the competition.',
         color:'border-purple-300',
         imageSrc: '/Projects_Strode.png',
         imageAlt: 'Strode_esports',
