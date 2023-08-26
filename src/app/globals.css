@@ -38,7 +38,7 @@ body:has(.projectimg[data-color="scarlett"]:hover) {
 }
 
 body:has(.projectimg[data-color="yt"]:hover) {
-  background-color: #a7ff9f;
+  background-color: #54005e;
   transition: 400ms;
 }
 
@@ -68,7 +68,7 @@ body:has(.projectimg[data-color="strode"]:hover) {
 }
 
 .projectimg[data-color="yt"]:hover {
-  border-color: #fb8dff;
+  border-color: #43d44a;
   transition: 400ms;
 }
 
