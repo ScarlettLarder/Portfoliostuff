@@ -33,7 +33,6 @@ export default function Home() {
   return (
     <div>
       <div className="mt-20 mb-20 ml-5">
-         <Image className="float-right flex my-5 lg:m-4 p-5" src="Placeholder_top.svg" alt="dash2" width={700} height={500}/>
          <h1 className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold">Welcome!</h1>
          <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
       </div>
