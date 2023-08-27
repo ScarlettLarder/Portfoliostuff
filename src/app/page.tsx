@@ -33,7 +33,6 @@ export default function Home() {
   return (
     <div>
       <div className="mt-20 mb-20 ml-5">
-         <Image className="float-right flex my-5 lg:m-4 p-5" src="Placeholder_top.svg" alt="dash2" width={700} height={500}/>
          <h1 className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold">Welcome!</h1>
          <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
       </div>
@@ -59,7 +58,7 @@ export default function Home() {
       <Image className='flex float-right pl-10' src="Edu_DecoBL.svg" alt="dash2" width={400} height={400}/>
       <h1 className="text-6xl xl:text-8xl text-center sm:text-left sm:mx-16 pb-px mt-20 text-gray-700 lmao font-bold bg-local"> Education + Skills</h1>
       <Image className='flex mx-auto sm:mx-16 ' src="Edu_DecoLine.svg" alt="dash2" width={420} height={500}/>
-      <p className="text-2xl md:text-3xl mt-4 m-10 sm:m-0 md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left"> 
+      <p className="text-2xl md:text-3xl mt-4 m-10 pb-5 sm:m-0 md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left"> 
       I am currently studying T-Level, Digital design, production and development at Strode college. 
       The first year covers python and has exams that test on legislation, problem solving, programming, emerging issues in tech, 
       data how to handle it for example, and security. The second year covers more web, with multiple frameworks, designing, databases 
