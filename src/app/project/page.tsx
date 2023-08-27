@@ -84,6 +84,7 @@ export default function About() {
                         <div data-color={Products.datacolor} className="mt-10 bg-gray-50 hover:bg-grey-100 mb-10 lg:m-20 border-8 bg-grey-100 border-purple-300 overflow-visible clearfix projectimg md:grayscale md:hover:grayscale-0">
                             <div data-color={Products.datacolor} className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right border-4 rounded-xl m-10 bg-gray-950 projectimg ">
                                   <img className="float-right hover:scale-105 duration-150 delay-75 mx-auto hover:opacity-75"
+                                    loading="lazy"
                                     src={Products.imageSrc}
                                     alt={Products.imageAlt}
                                     width={500} 
