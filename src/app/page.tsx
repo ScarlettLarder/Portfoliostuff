@@ -68,7 +68,7 @@ export default function Home() {
       </p>
       <Image className='right-0 float-right md:mr-24 mx-auto hover:scale-105 duration-150 delay-75' src="Edu_PopupStrode.svg" alt="dash2" width={700} height={500}/>
       <p className="text-2xl md:text-2xl mt-10 m-10 sm:m-0 md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left"> 
-      For my GCSE's, I got: French - 6, Math - 4, Art and design - 5, Biology - 5, English Language - 5, English Literature - 5, Chemistry - 4, Physics - 4.
+      For my GCSEs, I got: French - 6, Math - 4, Art and design - 5, Biology - 5, English Language - 5, English Literature - 5, Chemistry - 4, Physics - 4.
       </p>
       <p className="text-3xl sm:text-4xl md:ml-16 m-4 text-gray-600 font-bold whitespace-normal text-center md:text-left"> Some of my skills include:</p>
 
