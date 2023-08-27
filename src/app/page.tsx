@@ -33,6 +33,7 @@ export default function Home() {
   return (
     <div>
       <div className="mt-20 mb-20 ml-5">
+         <Image className="float-right flex my-5 lg:m-4 p-5" src="Placeholder_top.svg" alt="dash2" width={700} height={500}/>
          <h1 className="text-6xl xl:text-8xl 2xl:text-9xl m-2 pb-px mt-32 text-gray-700 lmao font-bold">Welcome!</h1>
          <p className="text-4xl xl:text-5xl 2xl:text-6xl m-2 font-semibold text-gray-600 ">You have found my portfolio</p>
       </div>
@@ -65,8 +66,12 @@ export default function Home() {
       and how to use APIs. Oh and also work experience, and workshops from companies like IBM and red hat. 
       You can learn more about the course <a className=" text-green-400 hover:text-green-200 focus:text-green-100" href="https://www.strode-college.ac.uk/courses/our-courses/digital-production,-design-and-d/?subject=&type=16744"> here!</a>
       </p>
-      <p className="text-3xl sm:text-4xl md:ml-16 m-4 text-gray-600 font-bold whitespace-normal text-center md:text-left"> Some of my skills include:</p>
       <Image className='right-0 float-right md:mr-24 mx-auto hover:scale-105 duration-150 delay-75' src="Edu_PopupStrode.svg" alt="dash2" width={700} height={500}/>
+      <p className="text-2xl md:text-2xl mt-10 m-10 sm:m-0 md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left"> 
+      For my GCSE's, I got: French - 6, Math - 4, Art and design - 5, Biology - 5, English Language - 5, English Literature - 5, Chemistry - 4, Physics - 4.
+      </p>
+      <p className="text-3xl sm:text-4xl md:ml-16 m-4 text-gray-600 font-bold whitespace-normal text-center md:text-left"> Some of my skills include:</p>
+
       <p className="text-2xl sm:text-3xl md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left mt-6 md:mt-0"> Video editing, web development, and experience with design, <br/> Rive and Figma.</p>
       <Image className='md:right-0 md:float-right md:mr-12 md:mt-12 mt-6 mx-auto hover:scale-105 duration-150 delay-75' src="Edu_PopupSoftware.svg" alt="dash2" width={220} height={500}/>
       <Image className='mt-10 pr-10' src="Edu_DecoTL.svg" alt="dash2" width={700} height={500}/>
@@ -76,7 +81,7 @@ export default function Home() {
             <h1 className="text-6xl xl:text-8xl text-center md:text-left mx-16 pb-px text-gray-700 lmao font-bold"> Hobbies </h1>
             <Image className=' md:ml-10 md:pb-10 md:float-none md:px-10 mx-auto' src="Hobby_DecoLine.svg" alt="dash2" width={420} height={500}/>
             <Image className="md:float-right mt-10 md:mr-20 pb-10 hover:scale-105 duration-150 delay-75 " src="Hobby_PopupYT.svg" alt="dash2" width={800} height={500}/>
-            <p className="text-2xl sm:text-3xl mx-4 sm:mx-16 pb-px text-gray-600 font-normal whitespace-normal text-center sm:text-left">My hobbies include my YouTube channel, that I try to upload often too and improve my skills at editing with premiere and after effects. I also enjoy gaming, reading and just generally creating stuff!</p>
+            <p className="text-2xl sm:text-3xl mx-4 sm:mx-16 pb-px text-gray-600 font-normal whitespace-normal text-center sm:text-left">My hobbies include my YouTube channel, that I try to upload often too and improve my skills at editing with premiere and after effects. I also enjoy gaming, reading and just generally creating stuff! My experience with video and photo editing has helped me alot in designing, and have been very useful in alot of my projects.</p>
             <div className="xl:ml-0 2xl:ml-48 xl:mt-16 pb-10 pt-10 ">
                 <div className="h-96 md:h-96 md:w-2/5 w-full hover:scale-105 duration-150 delay-75">
                     <RiveComponent />
