@@ -25,6 +25,11 @@
   }
 }
 
+.imagefixed {
+  width: 500px;
+  border-color: #7B66DA;
+  border-radius: 1rem;
+}
 
 /* This enables the colour changes when hoving on a project using the data-color on the project dictionary. */
 body:has(.projectimg[data-color="wessex"]:hover) {

@@ -81,15 +81,15 @@ export default function About() {
             </div>
                 {CurrentProjects.map((Products) => (
                     <a key={Products.project} href={Products.href}>
-                        <div data-color={Products.datacolor} className="mt-10 bg-gray-50 hover:bg-grey-100 mb-10 lg:m-20 border-8 bg-grey-100 border-purple-300 overflow-visible clearfix projectimg">
-                            <div className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right">
-                                  <img className="m-4 float-right hover:scale-105 duration-150 delay-75 mx-auto"
+                        <div data-color={Products.datacolor} className="mt-10 bg-gray-50 hover:bg-grey-100 mb-10 lg:m-20 border-8 bg-grey-100 border-purple-300 overflow-visible clearfix projectimg grayscale hover:grayscale-0">
+                            <div data-color={Products.datacolor} className="right-7 aspect-w-1 aspect-h-1 overflow-hidden float-right border-4 rounded-xl m-10 bg-gray-950 projectimg ">
+                                  <img className="float-right hover:scale-105 duration-150 delay-75 mx-auto hover:opacity-75"
                                     src={Products.imageSrc}
                                     alt={Products.imageAlt}
-                                    width={600} 
-                                    height={400}/>
-                            </div>   
-                            <div className="pl-5 px-3 ml-2 sm:ml-6 mb-">
+                                    width={500} 
+                                    height={10}/>
+                                 </div>
+                            <div className="pl-5 px-3 ml-2 sm:ml-6 ">
                                 <h2 className="text-3xl mt-10 font-normal">{Products.project}</h2>
                                 <h1 className="lmao text-7xl font-bold text-gray-700 ">{Products.name}</h1>
                                 <p className="text-3xl mt-5 font-bold "><span>What I did: </span>{Products.work}</p>
