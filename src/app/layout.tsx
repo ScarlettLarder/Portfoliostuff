@@ -24,20 +24,20 @@ export default function RootLayout({
                       {children}
                 <nav className="text-base sm:text-2xl flex items-center justify-between bottom-0 border-t-2 border-l-0 t-0 border-gray-300 bg-gradient-to-r from-indigo-200 to-red-200 ">
                     <span className='flex'>
-                      <button className="duration-75 delay-25 border-2 border-indigo-300 hover:border-indigo-300  bg-gradient-to-r from-indigo-300 to-indigo-300 hover:to-indigo-400 hover:bg-yellow-50 hover:text-grey-100 mt-2 mb-2 font-semibold py-1.5 px-1 sm:px-3 rounded shadow hover:shadow-xl ml-2 sm:ml-10 text-gray-600">
+                      <button className="duration-75 delay-25 border-2 border-indigo-300 hover:border-indigo-300 hover:scale-105  bg-gradient-to-r from-indigo-300 to-indigo-300 hover:to-indigo-400 hover:bg-yellow-50 hover:text-grey-100 mt-2 mb-2 font-semibold py-1.5 px-1 sm:px-3 rounded shadow hover:shadow-xl ml-2 sm:ml-10 text-gray-600">
                           <a  href="/project">All my project&apos;s</a>
                       </button>
-                        <a href="#" className="mt-3 mb-3 text-xl py-1.5 px-1 sm:px-4 rounded ml-2 sm:ml-4 text-gray-500 duration-75 hover:shadow">Back to the top!</a>
+                        <a href="#" className="mt-3 mb-3 text-xl py-1.5 px-1 sm:px-4 rounded ml-2 sm:ml-4 text-gray-500 duration-75 hover:shadow hover:scale-105">Back to the top!</a>
 
                     </span>
                     <div className='flex items-center justify-between pb-2 sm:pr-20'>
-                        <a className="ml-2 sm:ml-5 mt-2 p-2 delay-100 bg-red-300 hover:bg-red-200 rounded-lg duration-75 border-neutral-100 border-2" href="https://www.linkedin.com/in/alex-larder-066692258/">
+                        <a className="ml-2 sm:ml-5 mt-2 p-2 delay-100 bg-red-300 hover:bg-red-200 rounded-lg duration-75 border-neutral-100 border-2 hover:scale-105" href="https://www.linkedin.com/in/alex-larder-066692258/">
                             <Image alt="Linked_in_logo" src="/Logo_Linkedin.png" width={25} height={30}/>
                         </a>
-                        <a className='ml-2 sm:ml-5 mt-2 p-2 delay-100 bg-red-300 hover:bg-red-200 rounded-full duration-75 border-neutral-100 border-2' href="https://github.com/ScarlettLarder">
+                        <a className='ml-2 sm:ml-5 mt-2 p-2 delay-100 bg-red-300 hover:bg-red-200 rounded-full duration-75 border-neutral-100 border-2 hover:scale-105' href="https://github.com/ScarlettLarder">
                             <Image alt="Github_Logo" src="/Logo_Github.png" width={25} height={30}/>
                         </a>
-                        <a className='ml-2 sm:ml-5 mt-2 p-2 delay-100 bg-red-300 hover:bg-red-200 rounded-md duration-75 border-neutral-100 border-2 drop-shadow-xl' href="https://rive.app/@Starlett/">
+                        <a className='ml-2 sm:ml-5 mt-2 p-2 delay-100 bg-red-300 hover:bg-red-200 rounded-md duration-75 border-neutral-100 border-2 drop-shadow-xl hover:scale-105' href="https://rive.app/@Starlett/">
                             <Image alt="Rive_Logo" src="/Logo_rive.svg" width={25} height={30}/>
                         </a>
                     </div>

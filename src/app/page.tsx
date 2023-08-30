@@ -58,21 +58,55 @@ export default function Home() {
       <Image className='flex float-right pl-10' src="Edu_DecoBL.svg" alt="dash2" width={400} height={400}/>
       <h1 className="text-6xl xl:text-8xl text-center sm:text-left sm:mx-16 pb-px mt-20 text-gray-700 lmao font-bold bg-local"> Education + Skills</h1>
       <Image className='flex mx-auto sm:mx-16 ' src="Edu_DecoLine.svg" alt="dash2" width={420} height={500}/>
-      <p className="text-2xl md:text-3xl mt-4 m-10 pb-5 sm:m-0 md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left"> 
+      <p className="text-2xl md:text-3xl sm:pt-4 m-10 pb-5 sm:m-0 md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left"> 
       I am currently studying T-Level, Digital design, production and development at Strode college. 
       The first year covers python and has exams that test on legislation, problem solving, programming, emerging issues in tech, 
       data how to handle it for example, and security. The second year covers more web, with multiple frameworks, designing, databases 
       and how to use APIs. Oh and also work experience, and workshops from companies like IBM and red hat. 
-      You can learn more about the course <a className=" text-green-400 hover:text-green-200 focus:text-green-100" href="https://www.strode-college.ac.uk/courses/our-courses/digital-production,-design-and-d/?subject=&type=16744"> here!</a>
+      You can learn more about the course <a className=" text-green-400 hover:text-green-200 focus:text-green-100 underline" href="https://www.strode-college.ac.uk/courses/our-courses/digital-production,-design-and-d/?subject=&type=16744"> here!</a>
       </p>
       <Image className='right-0 float-right md:mr-24 mx-auto hover:scale-105 duration-150 delay-75' src="Edu_PopupStrode.svg" alt="dash2" width={700} height={500}/>
-      <p className="text-2xl md:text-2xl mt-10 m-10 sm:m-0 md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left"> 
-      For my GCSEs, I got: French - 6, Math - 4, Art and design - 5, Biology - 5, English Language - 5, English Literature - 5, Chemistry - 4, Physics - 4.
-      </p>
+      <Image className='md:right-0 md:float-right md:mr-12 md:mt-8 mt-6 mx-auto hover:scale-105 duration-150 delay-75' src="Edu_PopupSoftware.svg" alt="dash2" width={220} height={500}/>
+      <table className="text-sm sm:text-xl border-spacing-1.6 border border-slate-500 bg-slate-100 sm:ml-16  mx-auto ">
+          <thead className="">
+            <p className="ml-4 ">GCSE Results</p>
+          </thead>
+          <thead>
+            <tr>
+              <th className="border border-slate-600 px-3">French</th>
+              <th className="border border-slate-600 px-3">Math</th>
+              <th className="border border-slate-600 px-3">Art+Design</th>
+              <th className="border border-slate-600 px-3">Biology</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border border-slate-700 text-center">6</td>
+              <td className="border border-slate-700  text-center">4</td>
+              <td className="border border-slate-700 text-center">5</td>
+              <td className="border border-slate-700 text-center">5</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th className="border border-slate-600 px-3">English Lang</th>
+              <th className="border border-slate-600 px-3">English Lit</th>
+              <th className="border border-slate-600 px-3">Chemistry</th>
+              <th className="border border-slate-600 px-3">Physics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border border-slate-700 text-center">5</td>
+              <td className="border border-slate-700 text-center">5</td>
+              <td className="border border-slate-700 text-center">4</td>
+              <td className="border border-slate-700 text-center">4</td>
+            </tr>
+          </tbody>
+      </table>
       <p className="text-3xl sm:text-4xl md:ml-16 m-4 text-gray-600 font-bold whitespace-normal text-center md:text-left"> Some of my skills include:</p>
 
-      <p className="text-2xl sm:text-3xl md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left mt-6 md:mt-0"> Video editing, web development, and experience with design, <br/> Rive and Figma.</p>
-      <Image className='md:right-0 md:float-right md:mr-12 md:mt-12 mt-6 mx-auto hover:scale-105 duration-150 delay-75' src="Edu_PopupSoftware.svg" alt="dash2" width={220} height={500}/>
+      <p className="text-2xl sm:text-3xl md:ml-16 text-gray-600 font-normal whitespace-normal text-center md:text-left mt-6 md:mt-0"> Video editing, web development, and experience with design, Rive and Figma.</p>
       <Image className='mt-10 pr-10' src="Edu_DecoTL.svg" alt="dash2" width={700} height={500}/>
 
       <div className="mt-24 pt-10 clearfix gradient2 border-t-4 border-b-4 border-green-200 shadow-md">
@@ -91,8 +125,8 @@ export default function Home() {
 
       <div className="bg-[url('/Contact_DecoML.svg')] bg-no-repeat bg-bottom sm:bg-left bg-contain">
           <h1 className="text-6xl xl:text-8xl mx-16 pb-px mt-40 text-gray-700 lmao font-bold bg-local text-center md:text-left"> Contact </h1>
-          <Image className='flex md:mx-16 pb-px mx-auto' src="Contact_DecoLine.svg" alt="dash2" width={340} height={100}/>
-          <p className="mt-5 md:mt-10 text-2xl sm:text-3xl mx-4 sm:mx-16 pb-px text-gray-600 font-normal whitespace-normal text-center md:text-left"> You can find me on <a className="text-red-300 hover:text-red-200 underline" href="https://www.linkedin.com/in/alex-larder-066692258/">LinkedIn</a></p>
+          <Image className='flex md:mx-16 pb-px mx-auto ' src="Contact_DecoLine.svg" alt="dash2" width={340} height={100}/>
+          <p className="mt-5 md:mt-10 text-2xl sm:text-3xl mx-4 sm:mx-16 pb-px text-gray-600 font-normal whitespace-normal text-center md:text-left"> You can contact me on <a className="text-red-300 hover:text-red-200 underline" href="https://www.linkedin.com/in/alex-larder-066692258/">LinkedIn</a></p>
           <div className="">
             <span className="inline-flex items-center mt-10"> 
               <Image className='snap-center snap-right float-right rounded-full ml-1 sm:ml-16' src="Contact_Email.svg" alt="dash2" width={40} height={40}/>
