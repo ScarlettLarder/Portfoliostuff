@@ -130,13 +130,13 @@ export default function Home() {
           <div className="">
             <span className="inline-flex items-center mt-10"> 
               <Image className='snap-center snap-right float-right rounded-full ml-1 sm:ml-16' src="Contact_Email.svg" alt="dash2" width={40} height={40}/>
-              <span className="justify-between text-xl sm:text-3xl font-normal ml-3 sm:ml-5"> <span className='ml-3 font-semibold'>Email</span> - scarlett.insane@gmail.com</span>
+              <span className="justify-between text-xl sm:text-3xl font-normal ml-3 sm:ml-5"> <span className='ml-3 font-semibold'>Email</span> - scarlett.larder943@gmail.com</span>
             </span>
           </div>
           <div>
             <span className="inline-flex items-center mt-8 mb-80">
               <Image className='flex snap-center snap-right float-right rounded-full ml-1 sm:ml-16 ' src="Contact_Phone.svg" alt="dash2" width={40} height={40}/>
-              <span className="justify-between text-xl sm:text-3xl font-normal ml-3 sm:ml-5"><span className='ml-3 font-semibold mr-3'>Phone</span> - +4401278723495</span>
+              <span className="justify-between text-xl sm:text-3xl font-normal ml-3 sm:ml-5"><span className='ml-3 font-semibold mr-3'>Phone</span> - +44 07947946369</span>
             </span>
           </div>
       </div>
